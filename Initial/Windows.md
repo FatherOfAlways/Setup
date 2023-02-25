@@ -1,51 +1,5 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>macOS</title>
-		<link rel="stylesheet" type="text/css" href="https://tomaz.co/wp-content/uploads/css/style-navbar.css">
-		<style>
-			p {
-				margin-bottom: 14px;
-			}
-			pre {
-				padding: 14px;
-				border-radius: 6px;
-				display: flex;
-				margin-bottom: 14px
-			}
-			li p {
-				margin-left: 5px;
-			}
-			li > ul,
-			li > ol {
-				margin-bottom: 14px;
-			}
-			ol li ol,
-			ol li ul {
-				font-size: 90%;
-			}
-			code {
-				padding: 3px 6px;
-				font-size: 16px;
-				background: #eeeeee;
-				border-radius: 4px;
-				margin: 0 4px;
-				line-height: 24px;
-				font-size: 90%;
-			}
-			code p {
-				margin: 0;
-				padding: 0;
-			}
-			.article li, ol {
-				padding-left: 4px;
-			}
-			hr {
-				margin-top: 1.7em;
-				margin-bottom: 2.7em;
-			}
-		</style>
-	</head>
 	<body class="article">
 		<h2 id="windows-reset">Windows Reset</h2>
 		<ol>

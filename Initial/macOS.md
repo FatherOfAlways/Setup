@@ -23,7 +23,6 @@
 				<pre><code>brew bundle --file /PATH/TO/FILE</code></pre>
 			</li>
 		</ol>
-		<hr>
 		<h2 id="system">System</h2>
 		<ul>
 			<li>
@@ -64,7 +63,6 @@ cp *.otf ~/Library/Fonts/</code></pre>
 				<pre><code>defaults write -g NSToolbarTitleViewRolloverDelay -float 0</code></pre>
 			</li>
 		</ul>
-		<hr>
 		<h2 id="shell">Shell</h2>
 		<ol>
 			<li>
@@ -146,7 +144,6 @@ $(brew --prefix)/opt/fzf/install</pre></code>
 				<pre><code>~/Library/Application Support/iTerm2/DynamicProfiles</pre></code>
 			</li>
 		</ol>
-		<hr>
 		<h2 id="optional">Optional</h2>
 		<ul>
 			<li>

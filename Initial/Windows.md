@@ -15,7 +15,6 @@
 				</ul>
 			</li>
 		</ol>
-		<hr>
 		<h2 id="windows-install">Windows Install</h2>
 		<p><a href="https://hwbusters.com/quick-tips/quick-tips-6-bypass-microsoft-account-in-windows-11-the-hard-way/"><strong>Bypass Microsoft Account Requirement in Windows 11:</strong></a></p>
 		<ol>
@@ -34,7 +33,6 @@
 			</li>
 			<li>Sign in to Microsoft account after the installation completes.</li>
 		</ol>
-		<hr>
 		<h2 id="apps">Apps</h2>
 		<ol>
 			<li>
@@ -65,7 +63,6 @@
 				<p>Install the rest manually.</p>
 			</li>
 		</ol>
-		<hr>
 		<h2 id="tweaks">Tweaks</h2>
 		<ol>
 			<li>
@@ -95,7 +92,6 @@
 				<p>Apply tweaks from <code>Tweaks</code> folder.</p>
 			</li>
 		</ol>
-		<hr>
 		<h2 id="shell">Shell</h2>
 		<ol start="0">
 			<li>

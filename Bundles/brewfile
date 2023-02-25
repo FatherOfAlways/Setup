@@ -1,0 +1,156 @@
+# ---- #
+# Taps #
+# ---- #
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "jzelinskie/duckdns"
+tap "mas-cli/tap"
+tap "romkatv/powerlevel10k"
+
+# ----- #
+# Brews #
+# ----- #
+
+brew "sqlite"
+brew "duck"
+brew "webp"
+brew "ffmpeg"
+brew "git"
+brew "lua"
+brew "mas"
+brew "nmap"
+brew "openjdk"
+brew "python@3.8"
+brew "switchaudio-osx"
+brew "tree"
+brew "w3m"
+brew "youtube-dl"
+brew "zsh"
+brew "zsh-completions"
+brew "jzelinskie/duckdns/duckdns"
+brew "romkatv/powerlevel10k/powerlevel10k"
+
+# ----- #
+# Casks #
+# ----- #
+
+cask "1password"
+cask "alfred"
+cask "backblaze"
+cask "bartender"
+cask "bettertouchtool"
+cask "brave-browser"
+cask "carbon-copy-cloner"
+cask "cleanmymac"
+cask "cleanshot"
+cask "colorsnapper"
+cask "daisydisk"
+cask "discord"
+cask "drivedx"
+cask "firefox"
+cask "flirc"
+cask "flux"
+cask "font-awesome-terminal-fonts"
+cask "gemini"
+cask "handbrake"
+cask "hazel"
+cask "hyperdock"
+cask "iina"
+cask "imazing"
+cask "istat-menus"
+cask "iterm2"
+cask "java"
+cask "jettison"
+cask "karabiner-elements"
+cask "keyboard-maestro"
+cask "keyboardcleantool"
+cask "little-snitch"
+cask "loopback"
+cask "lyricsx"
+cask "mailtrackerblocker"
+cask "meta"
+cask "mgba"
+cask "moneywiz"
+cask "mpv"
+cask "nrlquaker-winbox"
+cask "ogdesign-eagle"
+cask "osxfuse"
+cask "paragon-ntfs"
+cask "pdf-expert"
+cask "resilio-sync"
+cask "screens"
+cask "scroll-reverser"
+cask "sequel-pro"
+cask "slack"
+cask "softorino-youtube-converter"
+cask "sonic-visualiser"
+cask "soulver"
+cask "soundsource"
+cask "sublime-text"
+cask "the-unarchiver"
+cask "transmission"
+cask "transmit"
+cask "visual-studio-code"
+cask "whatsapp"
+cask "xld"
+
+# ------------- #
+# Mac App Store #
+# ------------- #
+
+mas "Calcbot", id: 931657367
+mas "Cloud Outliner Pro", id: 1024917449
+mas "Deliveries", id: 290986013
+mas "Disk Speed Test", id: 425264550
+mas "Divvy", id: 413857545
+mas "Dropover", id: 1355679052
+mas "Dropshelf", id: 540404405
+mas "Dropzone 4", id: 1485052491
+mas "Due", id: 524373870
+mas "Hush", id: 1544743900
+mas "Image2icon", id: 992115977
+mas "Ionica", id: 1470230251
+mas "iStatistica Pro", id: 1447778660
+mas "MediaInfo", id: 510620098
+mas "Messenger", id: 1480068668
+mas "Metadatics", id: 554883654
+mas "Morpho", id: 1494942612
+mas "Name Mangler", id: 603637384
+mas "Paste", id: 967805235
+mas "Peek", id: 1554235898
+mas "PhotoBulk", id: 537211143
+mas "Pi Stats", id: 1514075262
+mas "Pixea", id: 1507782672
+mas "Pixelmator Pro", id: 1289583905
+mas "Reeder", id: 1529448980
+mas "Simplenote", id: 692867256
+mas "Spark", id: 1176895641
+mas "Tweetbot", id: 1384080005
+
+# -------- #
+# No Casks #
+# -------- #
+
+# 2Do
+# Air Video Server HD
+# Audient iD
+# deemix-pyweb
+# Flash Player (Standalone)
+# LyricsFinder
+# SmoothGesturesPlusExtras
+# VLC 2
+
+# ------------- #
+# No Cask (CRX) #
+# ------------- #
+
+# Adobe Lightroom Classic
+# BusyCal
+# DiskCatalogMaker
+# Microsoft Office
+# Sensei

@@ -2,15 +2,18 @@
 
 Instructions to help me get started setting up a fresh install.
 
-- Initial
-    - [macOS](https://github.com/FatherOfAlways/Setup/blob/main/Initial/macOS.md)
-    - [Windows](https://github.com/FatherOfAlways/Setup/blob/main/Initial/Windows.md)
-    - [Linux](https://github.com/FatherOfAlways/Setup/blob/main/Initial/Linux.md)
+## Initial
 
-- Bundles
-    - [brewfile](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/brewfile)
-    - [winget](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.json)
-    - [choco](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.config)
+- [macOS](https://github.com/FatherOfAlways/Setup/blob/main/Initial/macOS.md)
+- [Windows](https://github.com/FatherOfAlways/Setup/blob/main/Initial/Windows.md)
+- [Linux](https://github.com/FatherOfAlways/Setup/blob/main/Initial/Linux.md)
 
-- Shell
-    - [oh-my-posh Theme](https://github.com/FatherOfAlways/Setup/tree/main/Shell)
+## Bundles
+
+- [brewfile](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/brewfile)
+- [winget](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.json)
+- [choco](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.config)
+
+## Shell
+
+- [oh-my-posh Theme](https://github.com/FatherOfAlways/Setup/tree/main/Shell)

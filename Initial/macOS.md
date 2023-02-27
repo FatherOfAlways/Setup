@@ -34,6 +34,10 @@
 				<pre><code>defaults write com.apple.dock tilesize -int 45 &amp;&amp; killall -KILL Dock</code></pre>
 			</li>
 			<li>
+				<p>Lock the Dock Size:</p>
+				<pre><code>defaults write com.apple.Dock size-immutable -bool true && killall Dock</code></pre>
+			</li>
+			<li>
 				<p>Make <code>~/Library/</code> permanently visible:</p>
 				<pre><code>chflags nohidden ~/Library &amp;&amp; xattr -d com.apple.FinderInfo ~/Library</code></pre>
 			</li>

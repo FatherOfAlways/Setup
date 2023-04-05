@@ -86,6 +86,7 @@ wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/TheColla
 				<p>Edit <code>.zshrc</code></p>
 				<pre><code>cd ~
 nano .zshrc</code></pre>
+				<em>(Configuration uploaded <a href="https://github.com/FatherOfAlways/Setup/tree/main/zshrc">here</a>.)</em>
 			</li>
 			<li>
 				<p>Reload your profile for the changes to take effect:</p>

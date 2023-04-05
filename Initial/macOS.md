@@ -70,7 +70,7 @@ cp *.otf ~/Library/Fonts/</code></pre>
 		<h2 id="shell">Shell</h2>
 		<ol>
 			<li>
-				<p>Remove Start text from Terminal:</p>
+				<p>Remove Message of the day from Terminal:</p>
 				<pre><code>touch ~/.hushlogin</pre></code>
 			</li>
 			<li>

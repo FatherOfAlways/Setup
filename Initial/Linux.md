@@ -4,6 +4,10 @@
 		<h2 id="cli">CLI</h2>
 		<ol start="0">
 			<li>
+				<p>Remove Message of the day:</p>
+				<pre><code>touch ~/.hushlogin</pre></code>
+			</li>
+			<li>
 				<p>Check current (if already <code>ZSH</code>, skip to step <strong>6</strong>):</p>
 				<pre><code>echo $SHELL</code></pre>
 			</li>

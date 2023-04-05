@@ -9,9 +9,7 @@
 			</li>
 			<li>
 				<p>Install <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#ubuntu-debian--derivatives-windows-10-wsl--native-linux-kernel-with-windows-10-build-1903"><code>ZSH</code></a></p>
-				<pre><code>sudo apt update
-sudo apt upgrade
-sudo apt install zsh</code></pre>
+				<pre><code>sudo apt update && sudo apt upgrade -y && sudo apt install zsh</code></pre>
 			</li>
 			<li>
 				<p>Append <a href="https://www.jakewiesler.com/blog/zsh-as-default-shell#append-zshs-executable-filepath-to-etcshells">ZSH&#39;s executable filepath to <code>/etc/shells</code></a>:</p>

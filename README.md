@@ -16,4 +16,4 @@ Instructions to help me get started setting up a fresh install.
 
 ## Shell
 
-- [oh-my-posh Theme](https://github.com/FatherOfAlways/Setup/tree/main/Shell)
+- [posthemes](https://github.com/FatherOfAlways/Setup/tree/main/Shell)

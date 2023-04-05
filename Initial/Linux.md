@@ -29,15 +29,26 @@ sudo apt install zsh</code></pre>
 				<pre><code>echo $SHELL</code></pre>
 			</li>
 			<li>
-				<p>Install <a href="https://ohmyposh.dev/"><code>Oh My Posh</code></a>:</p>
-				<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+				<p>Install <a href="https://ohmyposh.dev/"><code>Oh My Posh</code></a>.
+					<p>NOTE: You have to select the correct architecture!</p>
+					<ol>
+						<li>
+							<p><code>amd64:</code></p>
+							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
 sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>
-				<p>OPTIONAL: Download <code>Oh My Posh</code> themes:</p>
-				<pre><code>mkdir ~/.poshthemes
-wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
-unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
-chmod u+rw ~/.poshthemes/*.omp.*
-rm ~/.poshthemes/themes.zip</code></pre>
+						</li>
+						<li>
+							<p><code>arm:</code></p>
+							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-arm -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>						</li>
+					</ol>
+				</p>
+				<p>Download <a href="https://github.com/FatherOfAlways/Setup/tree/main/Shell">my <code>Oh My Posh</code> themes</a>:</p>
+				<pre><code>	cd ~
+mkdir ~/.poshthemes
+cd .poshthemes/
+wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/TheCollabShort-1.6.omp.json'</code></pre>
+				<p>(Check if the <code>wget</code> link above is correct.)</p>
 			</li>
 			<li>
 				<p>Install <a href="https://ohmyz.sh/"><code>Oh My Zsh</code></a>:</p>

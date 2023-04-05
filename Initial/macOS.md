@@ -79,6 +79,11 @@ cp *.otf ~/Library/Fonts/</code></pre>
 brew install jandedobbeleer/oh-my-posh/oh-my-posh</pre></code>
 			</li>
 			<li>
+				<p>Install Nerd font - <code>Meslo</code>:</p>
+				<pre><code>oh-my-posh font install</code></pre>
+				<p><em>(If that doesn't work, manually install <a href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf"><code>MesloLGS NF Regular</code></a> <a href="https://www.nerdfonts.com/"><strong></strong></a>)</em></p>
+			</li>
+			<li>
 				<p>Install <a href="https://github.com/ohmyzsh/ohmyzsh"><code>Oh My Zsh</code></a>:</p>
 				<pre><code>sudo sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</pre></code>
 			</li>
@@ -131,6 +136,7 @@ $(brew --prefix)/opt/fzf/install</pre></code>
 						<li><code>.zsh_history</code></li>
 						<li><code>.zshrc</code></li>
 					</ul>
+					<em>(Some configuration files uploaded <a href="https://github.com/FatherOfAlways/Setup/tree/main/zshrc">here</a>.)</em>
 				</p>
 			</li>
 			<li>
@@ -140,8 +146,6 @@ $(brew --prefix)/opt/fzf/install</pre></code>
 						<li><code>lsd</code></li>
 					</ul>
 				</p>
-			</li>
-			<li><p>Manually install <a href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf"><code>MesloLGS NF Regular</code></a> <a href="https://www.nerdfonts.com/"><strong>Nerd Font</strong></a></p>
 			</li>
 			<li>
 				<p>Restore the <code>iTermPersonalised.json</code> Profile from backup to <a href="https://iterm2.com/"><strong>iTerm</strong></a> user folder:</p>

@@ -130,7 +130,7 @@ $(brew --prefix)/opt/fzf/install</pre></code>
 				<p>Restore the following files/folders to <code>~/</code> from backup:</p>
 				<p>
 					<ul>
-						<li><code>.oh-my-posh</code></li>
+						<li><code>.poshthemes</code></li>
 						<li><code>.oh-my-zsh</code></li>
 						<li><code>.fzf.zsh</code></li>
 						<li><code>.zsh_history</code></li>

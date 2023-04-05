@@ -92,6 +92,9 @@ nano .zshrc</code></pre>
 				<p>Reload your profile for the changes to take effect:</p>
 				<pre><code>exec zsh</code></pre>
 			</li>
+			<li>
+				<p>Enjoy <em>(or happy troubleshooting)</em>!</p>
+			</li>
 		</ol>
 	</body>
 </html>

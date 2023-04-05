@@ -136,7 +136,7 @@ $(brew --prefix)/opt/fzf/install</pre></code>
 						<li><code>.zsh_history</code></li>
 						<li><code>.zshrc</code></li>
 					</ul>
-					<em>(Some configuration files uploaded <a href="https://github.com/FatherOfAlways/Setup/tree/main/zshrc">here</a>.)</em>
+					<p><em>(Some configuration files uploaded <a href="https://github.com/FatherOfAlways/Setup/tree/main/zshrc">here</a>.)</em></p>
 				</p>
 			</li>
 			<li>

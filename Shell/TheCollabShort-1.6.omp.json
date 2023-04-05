@@ -44,18 +44,12 @@
         {
           "type": "git",
           "background": "#280C2E",
-          "background_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#7621DE{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#7621DE{{ end }}",
-            "{{ if gt .Ahead 0 }}#7621DE{{ end }}",
-            "{{ if gt .Behind 0 }}#7621DE{{ end }}"
-          ],
           "foreground": "#FFFFFF",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b0",
-          "template": " {{ .UpstreamIcon }} {{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ .UpstreamIcon }} \uE0A0 {{ .Ref }} ",
           "properties": {
-            "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true
           }
@@ -83,8 +77,8 @@
             "{{ if eq .Code 0 }}#009173{{ else if eq .Code 130 }}#CB3B00{{ else }}#91001E{{ end }}"
           ],
           "style": "diamond",
-          "leading_diamond": "\ue0b2<transparent,background>",
-          "trailing_diamond": "<transparent>\ue0b2",
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "<transparent,parentBackground>\ue0b2",
           "template": " {{ if eq .Code 0 }}\uf00c{{ else if eq .Code 130 }}\uf071 {{ .Code }}{{ else }}\uf00d {{ .Code }}{{ end }} ",
           "properties": {
             "always_enabled": true
@@ -95,8 +89,8 @@
           "background": "#1C7C82",
           "foreground": "#0C212F",
           "style": "diamond",
-          "leading_diamond": "\ue0b2<transparent,background>",
-          "trailing_diamond": "<transparent>\ue0b2",
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "<transparent,parentBackground>\ue0b2",
           "template": " \uf254 {{ .FormattedMs }} ",
           "properties": {
             "style": "round",

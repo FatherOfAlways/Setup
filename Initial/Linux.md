@@ -33,22 +33,28 @@ sudo apt install zsh</code></pre>
 					<p>NOTE: You have to select the correct architecture!</p>
 					<ol>
 						<li>
-							<p><code>amd64:</code></p>
-							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+							<p><code>arm</code> (arm machine - e.g. Raspberry Pi):</p>
+							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-arm -O /usr/local/bin/oh-my-posh
 sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>
 						</li>
 						<li>
-							<p><code>arm:</code></p>
-							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-arm -O /usr/local/bin/oh-my-posh
-sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>						</li>
+							<p><code>amd64</code> (regular x86 machine):</p>
+							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>
+						</li>
 					</ol>
 				</p>
+			</li>
+			<li>
+				<p>Install Nerd font - <code>Meslo</code>:</p>
+				<pre><code>oh-my-posh font install</code></pre>
+			</li>
+			<li>
 				<p>Download <a href="https://github.com/FatherOfAlways/Setup/tree/main/Shell">my <code>Oh My Posh</code> themes</a>:</p>
-				<pre><code>	cd ~
+				<pre><code>cd ~
 mkdir ~/.poshthemes
 cd .poshthemes/
-wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/TheCollabShort-1.6.omp.json'</code></pre>
-				<p>(Check if the <code>wget</code> link above is correct.)</p>
+wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/TheCollabShort-1.6.omp.json'</code></pre><br>(Check if the <code>wget</code> link above is still correct.)</p>
 			</li>
 			<li>
 				<p>Install <a href="https://ohmyz.sh/"><code>Oh My Zsh</code></a>:</p>
@@ -63,7 +69,7 @@ wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/TheColla
 					</li>
 					<li>
 						<p><a href="https://github.com/zsh-users/zsh-history-substring-search#install"><code>zsh-history-substring-search</code></a></p>
-						<pre><code>git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-hist</code></pre>
+						<pre><code>git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search</code></pre>
 					</li>
 					<li>
 						<p><a href="https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md"><code>zsh-syntax-highlighting</code></a></p>

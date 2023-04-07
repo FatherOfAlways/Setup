@@ -61,15 +61,18 @@ brew "kamilturek/python2/python@2"
 cask "1password"
 cask "1password-cli"
 cask "acorn"
-cask "airfoil"
+# cask "airflow"
+# cask "airfoil"
 cask "alfred"
 cask "apparency"
+cask "audio-hijack"
 cask "avidemux"
 cask "backblaze"
 cask "bartender"
 cask "bettertouchtool"
-cask "busycal"
-cask "busycontacts"
+cask "bitwarden"
+# cask "busycal"
+# cask "busycontacts"
 cask "carbon-copy-cloner"
 cask "cleanmymac"
 cask "cleanshot"
@@ -86,6 +89,7 @@ cask "google-chrome"
 cask "handbrake"
 cask "hazel"
 cask "imazing"
+cask "inkscape"
 cask "istat-menus"
 cask "iterm2"
 cask "jettison"
@@ -110,9 +114,10 @@ cask "paintbrush"
 cask "paragon-ntfs"
 cask "pdf-expert"
 cask "pixelsnap"
-cask "qbittorrent"
+# cask "qbittorrent"
 cask "qlvideo"
 cask "resilio-sync"
+cask "retrobatch"
 cask "screens"
 cask "scroll-reverser"
 cask "shapes"
@@ -120,9 +125,9 @@ cask "sonic-visualiser"
 cask "soulseek"
 cask "soulver"
 cask "soundsource"
-cask "steam"
+# cask "steam"
 cask "sublime-text"
-cask "teamviewer"
+# cask "teamviewer"
 cask "the-unarchiver"
 cask "topnotch"
 cask "transmission"
@@ -152,7 +157,7 @@ mas "Dropover", id: 1355679052
 mas "Dropshelf", id: 540404405
 mas "Dropzone 4", id: 1485052491
 mas "Due", id: 524373870
-mas "Hush", id: 1544743900
+# mas "Hush", id: 1544743900
 mas "Image2icon", id: 992115977
 mas "Ionica", id: 1470230251
 mas "MarkEdit", id: 1669953820
@@ -161,7 +166,7 @@ mas "Messenger", id: 1480068668
 mas "Metadatics", id: 554883654
 mas "MoneyWiz", id: 1511185140
 mas "Morpho", id: 1494942612
-mas "MusicHarbor", id: 1440405750
+# mas "MusicHarbor", id: 1440405750
 mas "Name Mangler", id: 603637384
 mas "Paste", id: 967805235
 mas "Peek", id: 1554235898
@@ -171,11 +176,9 @@ mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
 mas "Simplenote", id: 692867256
 mas "Spark", id: 1176895641
-mas "Speedtest", id: 1153157709
+# mas "Speedtest", id: 1153157709
 mas "Subtrack", id: 1519946553
-mas "Tayasui Sketches", id: 1178074963
 mas "Tot", id: 1491071483
-mas "Tweetbot", id: 1384080005
 mas "Xcode", id: 497799835
 
 
@@ -188,6 +191,7 @@ mas "Xcode", id: 497799835
 # Audient iD
 # deemix-pyweb
 # Flash Player (Standalone)
+# Freecell
 # SmoothGesturesPlusExtras
 # VLC 2
 

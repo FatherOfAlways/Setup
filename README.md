@@ -16,4 +16,6 @@ Instructions to help me get started setting up a fresh install.
 
 ## Shell
 
-- [posthemes](https://github.com/FatherOfAlways/Setup/tree/main/Shell)
+- [posthemes](https://github.com/FatherOfAlways/Setup/tree/main/Shell/poshthemes)
+- [PowerShell](https://github.com/FatherOfAlways/Setup/tree/main/Shell/PowerShell)
+- [zshrc](https://github.com/FatherOfAlways/Setup/tree/main/Shell/zshrc)

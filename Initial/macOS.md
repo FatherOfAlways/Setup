@@ -9,8 +9,6 @@
 			<li>
 				<p>Install <a href="https://brew.sh/"><code>Homebrew</code></a> manually:</p>
 				<pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
-			</li>
-			<li>
 				<ul>
 					<li>
 						<p><em>OPTIONAL (Should already be included in the above comamnd): Install <a href="https://docs.brew.sh/Installation"><strong>Command Line Tools</strong></a> for Xcode:</em></p>

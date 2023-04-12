@@ -24,7 +24,7 @@
 		<h2 id="iterm">iTerm</h2>
 		<ol>
 			<li>
-				<p>Install <a href="https://iterm2.com/">iTerm:</a></p>
+				<p>Install <a href="https://iterm2.com/"><code>iTerm:</code></a></p>
 				<pre><code>brew install iterm2</code></pre>
 			</li>
 			<li>
@@ -47,7 +47,7 @@
 				<pre><code>touch ~/.hushlogin</pre></code>
 			</li>
 			<li>
-				<p>Install <a href="https://ohmyposh.dev/"><code>Oh My Posh</code></a>::</p>
+				<p>Install <a href="https://ohmyposh.dev/"><code>Oh My Posh</code></a>:</p>
 				<pre><code>brew install gcc
 brew install jandedobbeleer/oh-my-posh/oh-my-posh</pre></code>
 			</li>
@@ -96,7 +96,7 @@ chown -R USERNAME:admin .oh-my-zsh</pre></code>
 			</li>
 			<li>
 				<p>Install <a href="https://github.com/junegunn/fzf"><code>fzf</code></a>:</p>
-				<pre><code>brew install fzf</code>
+				<pre><code>brew install fzf</code></pre>
 			</li>
 			<li>
 				<p>Restore the following files/folders to <code>~/</code> from backup:</p>
@@ -108,7 +108,7 @@ chown -R USERNAME:admin .oh-my-zsh</pre></code>
 						<li><code>.zsh_history</code></li>
 						<li><code>.zshrc</code></li>
 					</ul>
-					<p><em>(Some configuration files uploaded <a href="https://github.com/FatherOfAlways/Setup/tree/main/zshrc">here</a>.)</em></p>
+					<p><em>(Some configuration files uploaded <a href="https://github.com/FatherOfAlways/Setup/tree/main/Shell/zshrc">here</a>.)</em></p>
 				</p>
 			</li>
 			<li>
@@ -159,13 +159,9 @@ chown -R USERNAME:admin .oh-my-zsh</pre></code>
 				<pre><code>defaults write com.apple.dock persistent-apps -array-add &#39;{&quot;tile-type&quot;=&quot;small-spacer-tile&quot;;}&#39; &amp;&amp; killall Dock</code></pre>
 			</li>
 			<li>
-				<p>Install SF Mono Font:</p>
-				<pre><code>cd /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts
-cp *.otf ~/Library/Fonts/</code></pre>
-			</li>
-			<li>
 				<p>Always Show Window Proxy Icons:</p>
-				<pre><code>defaults write -g NSToolbarTitleViewRolloverDelay -float 0</code></pre>
+				<pre><code>defaults write -g NSToolbarTitleViewRolloverDelay -float 0
+defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true</code></pre>
 			</li>
 		</ul>
 		<h2 id="ssh">SSH</h2>

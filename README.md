@@ -16,6 +16,8 @@ Instructions to help me get started setting up a fresh install.
 
 ## Shell
 
+- [iTerm](https://github.com/FatherOfAlways/Setup/tree/main/Shell/iTerm)
 - [posthemes](https://github.com/FatherOfAlways/Setup/tree/main/Shell/poshthemes)
 - [PowerShell](https://github.com/FatherOfAlways/Setup/tree/main/Shell/PowerShell)
+- [ssh](https://github.com/FatherOfAlways/Setup/tree/main/Shell/ssh)
 - [zshrc](https://github.com/FatherOfAlways/Setup/tree/main/Shell/zshrc)

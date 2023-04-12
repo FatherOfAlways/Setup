@@ -18,53 +18,28 @@
 			</li>
 			<li>
 				<p>Install <a href="https://brew.sh/"><code>Homebrew</code></a> packages apps from <a href="https://www.dropbox.com/sh/wljpxtuticvsyzu/AACAe58Dmzq5h5uCeRfgcGnUa?dl=0"><code>brewfile</code></a>:</p>
-				<pre><code>brew bundle --file /PATH/TO/FILE</code></pre>
+				<pre><code>brew bundle --file "/PATH/TO/FILE/"</code></pre>
 			</li>
 		</ol>
-		<h2 id="system">System</h2>
-		<ul>
+		<h2 id="iterm">iTerm</h2>
+		<ol>
 			<li>
-				<p>Allow Apps from Anywhere in Gatekeeper:</p>
-				<pre><code>sudo spctl --master-disable</code></pre>
+				<p>Install <a href="https://iterm2.com/">iTerm:</a></p>
+				<pre><code>brew install iterm2</code></pre>
 			</li>
 			<li>
-				<p>Change Dock Size:</p>
-				<pre><code>defaults write com.apple.dock tilesize -int 45 &amp;&amp; killall -KILL Dock</code></pre>
+				<p>Restore the following file to <code>~/Library/Application Support/iTerm2/DynamicProfiles</code> from backup:</p>
+				<ul>
+					<li><code>iTermPersonalised.json</code></li>
+				</ul>
 			</li>
 			<li>
-				<p>Lock the Dock Size:</p>
-				<pre><code>defaults write com.apple.Dock size-immutable -bool true && killall Dock</code></pre>
+				<p>Restore the following file to <code>~/Library/Preferences</code> from backup:</p>
+				<ul>
+					<li><code>com.googlecode.iterm2.plist</code></li>
+				</ul>
 			</li>
-			<li>
-				<p>Make <code>~/Library/</code> permanently visible:</p>
-				<pre><code>chflags nohidden ~/Library &amp;&amp; xattr -d com.apple.FinderInfo ~/Library</code></pre>
-			</li>
-			<li>
-				<p>Enable &#39;Expanded Save Dialog&#39; as Default:</p>
-				<pre><code>defaults write -g NSNavPanelExpandedStateForSaveMode -bool TRUE</code></pre>
-			</li>
-			<li>
-				<p>Disable Animations When Opening the Info Window:</p>
-				<pre><code>defaults write com.apple.finder DisableAllAnimations -bool true &amp;&amp; killall Finder</code></pre>
-			</li>
-			<li>
-				<p>Disable the Default Long Press Action for Keys:  </p>
-				<pre><code>defaults write -g ApplePressAndHoldEnabled -bool false</code></pre>
-			</li>
-			<li>
-				<p>Add a Small Dock Spacer:</p>
-				<pre><code>defaults write com.apple.dock persistent-apps -array-add &#39;{&quot;tile-type&quot;=&quot;small-spacer-tile&quot;;}&#39; &amp;&amp; killall Dock</code></pre>
-			</li>
-			<li>
-				<p>Install SF Mono Font:</p>
-				<pre><code>cd /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts
-cp *.otf ~/Library/Fonts/</code></pre>
-			</li>
-			<li>
-				<p>Always Show Window Proxy Icons:</p>
-				<pre><code>defaults write -g NSToolbarTitleViewRolloverDelay -float 0</code></pre>
-			</li>
-		</ul>
+		</ol>
 		<h2 id="shell">Shell</h2>
 		<ol>
 			<li>
@@ -121,8 +96,7 @@ chown -R USERNAME:admin .oh-my-zsh</pre></code>
 			</li>
 			<li>
 				<p>Install <a href="https://github.com/junegunn/fzf"><code>fzf</code></a>:</p>
-				<pre><code>brew install fzf
-$(brew --prefix)/opt/fzf/install</pre></code>
+				<pre><code>brew install fzf</code>
 			</li>
 			<li>
 				<p>Restore the following files/folders to <code>~/</code> from backup:</p>
@@ -150,6 +124,67 @@ $(brew --prefix)/opt/fzf/install</pre></code>
 				<pre><code>~/Library/Application Support/iTerm2/DynamicProfiles</pre></code>
 			</li>
 		</ol>
+		<h2 id="system">System</h2>
+		<ul>
+			<li>
+				<p>Allow Apps from Anywhere in Gatekeeper:</p>
+				<pre><code>sudo spctl --master-disable</code></pre>
+			</li>
+			<li>
+				<p>Change Dock Size:</p>
+				<pre><code>defaults write com.apple.dock tilesize -int 45 &amp;&amp; killall -KILL Dock</code></pre>
+			</li>
+			<li>
+				<p>Lock the Dock Size:</p>
+				<pre><code>defaults write com.apple.Dock size-immutable -bool true && killall Dock</code></pre>
+			</li>
+			<li>
+				<p>Make <code>~/Library/</code> permanently visible:</p>
+				<pre><code>chflags nohidden ~/Library &amp;&amp; xattr -d com.apple.FinderInfo ~/Library</code></pre>
+			</li>
+			<li>
+				<p>Enable &#39;Expanded Save Dialog&#39; as Default:</p>
+				<pre><code>defaults write -g NSNavPanelExpandedStateForSaveMode -bool TRUE</code></pre>
+			</li>
+			<li>
+				<p>Disable Animations When Opening the Info Window:</p>
+				<pre><code>defaults write com.apple.finder DisableAllAnimations -bool true &amp;&amp; killall Finder</code></pre>
+			</li>
+			<li>
+				<p>Disable the Default Long Press Action for Keys:  </p>
+				<pre><code>defaults write -g ApplePressAndHoldEnabled -bool false</code></pre>
+			</li>
+			<li>
+				<p>Add a Small Dock Spacer:</p>
+				<pre><code>defaults write com.apple.dock persistent-apps -array-add &#39;{&quot;tile-type&quot;=&quot;small-spacer-tile&quot;;}&#39; &amp;&amp; killall Dock</code></pre>
+			</li>
+			<li>
+				<p>Install SF Mono Font:</p>
+				<pre><code>cd /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts
+cp *.otf ~/Library/Fonts/</code></pre>
+			</li>
+			<li>
+				<p>Always Show Window Proxy Icons:</p>
+				<pre><code>defaults write -g NSToolbarTitleViewRolloverDelay -float 0</code></pre>
+			</li>
+		</ul>
+		<h2 id="ssh">SSH</h2>
+		<ul>
+			<li>
+				<p>Restore the following file to <code>/private/etc/ssh</code> from backup:</p>
+				<ul>
+					<li><code>sshd_config</code></li>
+				</ul>
+			</li>
+			<li>
+				<p>Restore the following files to <code>~/.ssh</code> from backup:</p>
+				<ul>
+					<li><code>authorized_keys</code></li>
+					<li><code>config</code></li>
+					<li><code>known_hosts</code></li>
+				</ul>
+			</li>
+		</ul>
 		<h2 id="optional">Optional</h2>
 		<ul>
 			<li>

@@ -181,6 +181,11 @@ defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true</cod
 					<li><code>known_hosts</code></li>
 				</ul>
 			</li>
+			<li>
+				<p>Restart <code>ssh</code> service:</p>
+				<pre><code>sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
+sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist</code></pre>
+			</li>
 		</ul>
 		<h2 id="optional">Optional</h2>
 		<ul>

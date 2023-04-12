@@ -8,11 +8,15 @@
 			</li>
 			<li>
 				<p>Install <a href="https://brew.sh/"><code>Homebrew</code></a> manually:</p>
-				<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></pre>
+				<pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
 			</li>
 			<li>
-				<p>Install <a href="https://docs.brew.sh/Installation"><strong>Command Line Tools</strong></a> for Xcode:</p>
-				<pre><code>xcode-select --install</code></pre>
+				<ul>
+					<li>
+						<p><em>OPTIONAL (Should already be included in the above comamnd): Install <a href="https://docs.brew.sh/Installation"><strong>Command Line Tools</strong></a> for Xcode:</em></p>
+						<pre><code>xcode-select --install</code></pre>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<p>Install <a href="https://support.apple.com/en-us/HT211861"><strong>Rosetta 2</strong></a>:</p>

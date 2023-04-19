@@ -8,6 +8,10 @@ Instructions to help me get started setting up a fresh install.
 - [Windows](https://github.com/FatherOfAlways/Setup/blob/main/Initial/Windows.md)
 - [Linux](https://github.com/FatherOfAlways/Setup/blob/main/Initial/Linux.md)
 
+## Config
+
+- [Files](https://github.com/FatherOfAlways/Setup/tree/main/Config)
+
 ## Bundles
 
 - [brewfile](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/brewfile)

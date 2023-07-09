@@ -19,9 +19,9 @@
     "Red Component" : 1,
     "Blue Component" : 1
   },
-  "Option Key Sends" : 2,
-  "Right Option Key Sends" : 2,
-  "Rows" : 73,
+  "Option Key Sends" : 0,
+  "Right Option Key Sends" : 0,
+  "Rows" : 81,
   "Default Bookmark" : "No",
   "Non-ASCII Anti Aliased" : true,
   "Use Bright Bold" : true,
@@ -55,7 +55,7 @@
     "Red Component" : 0.70980000495910645,
     "Blue Component" : 1
   },
-  "Columns" : 118,
+  "Columns" : 124,
   "Idle Code" : 0,
   "Custom Command" : "No",
   "ASCII Anti Aliased" : true,

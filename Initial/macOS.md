@@ -125,7 +125,7 @@ chown -R USERNAME:admin .oh-my-zsh</pre></code>
 			</li>
 		</ol>
 		<h2 id="system">System</h2>
-		<p>An (awesome) collection of these commands can be found <a href="https://git.herrbischoff.com/awesome-macos-command-line/about/">here</a>.</p>
+		<p>An awesome collection of these commands can be found <a href="https://git.herrbischoff.com/awesome-macos-command-line/about/">here</a>.</p>
 		<ul>
 			<li>
 				<p>Allow Apps from Anywhere in Gatekeeper:</p>

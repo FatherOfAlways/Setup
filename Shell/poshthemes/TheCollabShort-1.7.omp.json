@@ -70,7 +70,7 @@
       "type": "prompt",
       "segments":  [
         {
-          "type": "exit",
+          "type": "status",
           "background": "#009173",
           "foreground": "#ffffff",
           "background_templates": [
@@ -78,7 +78,7 @@
           ],
           "style": "diamond",
           "leading_diamond": "\ue0b2",
-          "trailing_diamond": "<transparent,parentBackground>\ue0b2",
+          "trailing_diamond": "<transparent,background>\ue0b2",
           "template": " {{ if eq .Code 0 }}\uf00c{{ else if eq .Code 130 }}\uf071 {{ .Code }}{{ else }}\uf00d {{ .Code }}{{ end }} ",
           "properties": {
             "always_enabled": true
@@ -90,7 +90,7 @@
           "foreground": "#0C212F",
           "style": "diamond",
           "leading_diamond": "\ue0b2",
-          "trailing_diamond": "<transparent,parentBackground>\ue0b2",
+          "trailing_diamond": "<transparent,background>\ue0b2",
           "template": " \uf254 {{ .FormattedMs }} ",
           "properties": {
             "style": "round",

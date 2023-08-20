@@ -164,6 +164,10 @@ chown -R USERNAME:admin .oh-my-zsh</pre></code>
 				<pre><code>defaults write -g NSToolbarTitleViewRolloverDelay -float 0
 defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true</code></pre>
 			</li>
+			<li>
+				<p>Disable Homebrew Analytics:</p>
+				<pre><code>brew analytics off</code></pre>
+			</li>
 		</ul>
 		<h2 id="ssh">SSH</h2>
 		<ul>

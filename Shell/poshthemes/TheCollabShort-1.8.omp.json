@@ -19,7 +19,7 @@
           "background": "#26BDBB",
           "foreground": "#0C212F",
           "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0",
+          "leading_diamond": "<transparent>\ue0b0",
           "trailing_diamond": "\ue0b0",
           "template": "{{ if .SSHSession }} \uF817 \ue0b1{{ end }} \uf007 {{ .UserName }} "
         },
@@ -28,8 +28,8 @@
           "background": "#26BDBB",
           "foreground": "#0C212F",
           "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0",
-          "trailing_diamond": "\ue0b0",
+          "leading_diamond": "<transparent>\ue0b0",
+          "trailing_diamond": "<background,transparent>\ue0b0",
           "template": " {{ .Path }} ",
           "_comment1": "{{ if and ( eq (substr 0 3 .Path) \"\u200B\" ) ( ne .Path \"\u200B\" ) }} \uf015{{ .Path }} {{ else if ne (substr 0 3 .Path) \"\u200B\" }} \uf07b {{ .Path }}{{ else }} \uf015 {{ end }}",
           "_comment2": "If the complicated template is used, 'home_icon' property must be changed to '\u200B'; template only works correctly on macOS.",
@@ -46,7 +46,7 @@
           "background": "#280C2E",
           "foreground": "#FFFFFF",
           "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0",
+          "leading_diamond": "<transparent>\ue0b0",
           "trailing_diamond": "\ue0b0",
           "template": " {{ .UpstreamIcon }} \uE0A0 {{ .Ref }} ",
           "properties": {
@@ -59,7 +59,7 @@
           "background": "#CB3B00",
           "foreground": "#FFFFFF",
           "style": "diamond",
-          "leading_diamond": "<transparent,background>\ue0b0",
+          "leading_diamond": "<transparent>\ue0b0",
           "trailing_diamond": "\ue0b0",
           "template": " \uf0aa "
         }
@@ -71,11 +71,10 @@
       "segments":  [
         {
           "type": "status",
-          "background": "#009173",
-          "foreground": "#ffffff",
           "background_templates": [
             "{{ if eq .Code 0 }}#009173{{ else if eq .Code 130 }}#CB3B00{{ else }}#91001E{{ end }}"
           ],
+		  "foreground": "#ffffff",
           "style": "diamond",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "<transparent,background>\ue0b2",

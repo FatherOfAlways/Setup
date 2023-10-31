@@ -56,7 +56,7 @@ sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>
 				<pre><code>cd ~
 mkdir ~/.poshthemes
 cd .poshthemes/
-wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/TheCollabShort-Linux-1.6.omp.json'</code></pre>
+wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/poshthemes/TheCollabShort-1.8.omp.json'</code></pre>
 				<em>(Check if the <code>wget</code> link above is still correct.)</em>
 			</li>
 			<li>

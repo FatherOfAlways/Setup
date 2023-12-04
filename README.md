@@ -15,8 +15,6 @@ Instructions to help me get started setting up a fresh install.
 
 ## Config
 
-- [Files](https://github.com/FatherOfAlways/Setup/tree/main/Config/Other)
-
 ### Bundles
 
 - [brewfile](https://github.com/FatherOfAlways/Setup/blob/main/Config/Bundles/brewfile)
@@ -30,3 +28,7 @@ Instructions to help me get started setting up a fresh install.
 - [PowerShell](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/PowerShell)
 - [ssh](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/ssh)
 - [zshrc](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/zshrc)
+
+### Other
+
+- [Files](https://github.com/FatherOfAlways/Setup/tree/main/Config/Other)

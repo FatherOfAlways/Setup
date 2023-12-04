@@ -56,7 +56,7 @@
 
 11.  Install [`Oh My Zsh`](https://ohmyz.sh/):
 
-			sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+		 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 12.  Install the following `Oh My Zsh` plugins:
 

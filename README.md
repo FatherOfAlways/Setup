@@ -12,13 +12,13 @@ Instructions to help me get started setting up a fresh install.
 
 - [Files](https://github.com/FatherOfAlways/Setup/tree/main/Config)
 
-## Bundles
+### Bundles
 
 - [brewfile](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/brewfile)
 - [winget](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.json)
 - [choco](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.config)
 
-## Shell
+### Shell
 
 - [iTerm](https://github.com/FatherOfAlways/Setup/tree/main/Shell/iTerm)
 - [posthemes](https://github.com/FatherOfAlways/Setup/tree/main/Shell/poshthemes)

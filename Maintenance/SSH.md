@@ -116,15 +116,15 @@ Not sure which is correct:
 
 ### macOS
 
-* [acOS (partial guide)](https://medium.com/@stringmeteor/secure-your-macos-remote-ssh-access-by-disabling-password-access-68a92dd732d0)
+* [Partial guide](https://medium.com/@stringmeteor/secure-your-macos-remote-ssh-access-by-disabling-password-access-68a92dd732d0)
 * [How to Enable SSH on a Mac from CLI](https://osxdaily.com/2016/08/16/enable-ssh-mac-command-line/)
 
 ### Linux
 
-* [Linux (full guide)](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
+* [Full guide](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
 
 ### Windows
 
-* [Windows (full guide)](https://gist.github.com/adamelliotfields/16dfac1bacf6d2eeada0582fdfbbb7b6)
+* [Full guide](https://gist.github.com/adamelliotfields/16dfac1bacf6d2eeada0582fdfbbb7b6)
 * [Key-based authentication in OpenSSH for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
 * [Restart a Windows service from CLI](https://superuser.com/questions/301765/restart-a-windows-service-from-the-command-line)

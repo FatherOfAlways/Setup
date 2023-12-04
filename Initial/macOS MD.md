@@ -4,11 +4,11 @@
 
 2. Install [`Homebrew`](https://brew.sh/) manually:
 
-		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 	_OPTIONAL (If not already installed in the above comamnd): Install [**Command Line Tools**](https://docs.brew.sh/Installation) for Xcode:_
 
-		xcode-select --install
+        xcode-select --install
 
 3. Install [**Rosetta 2**](https://support.apple.com/en-us/HT211861):
 
@@ -48,7 +48,7 @@
 
 		oh-my-posh font install
 
-	_(If that doesn't work, manually install [`MesloLGS NF Regular`](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf) [](https://www.nerdfonts.com/))_
+	_(If that doesn't work, manually install [`MesloLGS NF Regular`.](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf) [](https://www.nerdfonts.com/))_
 
 4. Install [`Oh My Zsh`](https://github.com/ohmyzsh/ohmyzsh):
 

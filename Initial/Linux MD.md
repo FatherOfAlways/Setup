@@ -30,7 +30,7 @@
 
 	NOTE: You have to select the correct architecture!
 
-	1.  `arm` (arm machine - e.g. Raspberry Pi):
+	1.  `arm` (ARM machine - e.g. Raspberry Pi):
 
 			sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-arm -O /usr/local/bin/oh-my-posh
 			sudo chmod +x /usr/local/bin/oh-my-posh

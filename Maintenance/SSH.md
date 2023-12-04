@@ -2,9 +2,7 @@
 
 Enter command and follow the instructions:
 
-		ssh-keygen -t rsa
-
-* * *
+	ssh-keygen -t rsa
 
 
 
@@ -14,7 +12,7 @@ Enter command and follow the instructions:
 
 Execute on *client*; The following command adds client's public key to server's `.ssh/authorized_keys` file:
 
-		ssh-copy-id USERNAME@HOST
+	ssh-copy-id USERNAME@HOST
 
 ### Windows
 
@@ -22,11 +20,7 @@ Execute on *client*; The following command adds client's public key to server's 
 
 *Windows client:* Run the following command:
 
-		type $env:USERPROFILE\.ssh\id_rsa.pub | ssh USERNAME@HOST "cat >> .ssh/authorized_keys"
-
-
-
-* * *
+	type $env:USERPROFILE\.ssh\id_rsa.pub | ssh USERNAME@HOST "cat >> .ssh/authorized_keys"
 
 
 
@@ -36,10 +30,10 @@ Execute on *client*; The following command adds client's public key to server's 
 
 *Required:*
 
-		PasswordAuthentication no
-		KbdInteractiveAuthentication no
-		PubkeyAuthentication yes				# May be "no" by default
-		UsePAM no
+	PasswordAuthentication no
+	KbdInteractiveAuthentication no
+	PubkeyAuthentication yes				# May be "no" by default
+	UsePAM no
 
 *Optional:*
 
@@ -49,14 +43,14 @@ Execute on *client*; The following command adds client's public key to server's 
 
 *Required:*
 
-		PasswordAuthentication no
-		ChallengeResponseAuthentication no		# Older versions only; obsolete
-		KbdInteractiveAuthentication no			# New version of "KbdInteractiveAuthentication"
-		UsePAM no
+	PasswordAuthentication no
+	ChallengeResponseAuthentication no		# Older versions only; obsolete
+	KbdInteractiveAuthentication no			# New version of "KbdInteractiveAuthentication"
+	UsePAM no
 
 *Optional:*
 
-		PermitRootLogin no						# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
+	PermitRootLogin no						# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
 
 ### Windows
 
@@ -64,16 +58,14 @@ Execute on *client*; The following command adds client's public key to server's 
 
 Passwordless:
 
-		PasswordAuthentication no
-		KbdInteractiveAuthentication no
-		# Match Group administrators												# Comment out to enable Admin users to log in
-		# AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys		# Comment out to enable Admin users to log in
+	PasswordAuthentication no
+	KbdInteractiveAuthentication no
+	# Match Group administrators												# Comment out to enable Admin users to log in
+	# AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys		# Comment out to enable Admin users to log in
 
 CLI: Allow inbound connections on port 22:
 
-		netsh advfirewall firewall add rule name=sshd dir=in action=allow protocol=TCP localport=22
-
-* * *
+	netsh advfirewall firewall add rule name=sshd dir=in action=allow protocol=TCP localport=22
 
 
 
@@ -83,24 +75,21 @@ CLI: Allow inbound connections on port 22:
 
 Not sure which is correct:
 
-		sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
-		sudo launchctl load /System/Library/LaunchDaemons/ssh.plist
+	sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
+	sudo launchctl load /System/Library/LaunchDaemons/ssh.plist
 
-		sudo systemsetup -setremotelogin off
-		sudo systemsetup -setremotelogin on
+	sudo systemsetup -setremotelogin off
+	sudo systemsetup -setremotelogin on
 
 ### Linux
 
-		sudo systemctl reload ssh
+	sudo systemctl reload ssh
 
 ### Windows
 
-		Stop-Service sshd
-		Start-Service sshd
-		Get-Service sshd		# Status check
-
-
-* * *
+	Stop-Service sshd
+	Start-Service sshd
+	Get-Service sshd		# Status check
 
 
 
@@ -110,18 +99,16 @@ Not sure which is correct:
 
 2. Check if `~/.ssh` folder and its contents have correct permissions:
 
-		ls -la ~/.ssh
+	ls -la ~/.ssh
 
-		-rw------- [username] [usergroup] authorized_keys
-		-rw------- [username] [usergroup] id_rsa
-		-rw-r--r-- [username] [usergroup] id_rsa.pub
-		-rw-r--r-- [username] [usergroup] known_hosts
+	-rw------- [username] [usergroup] authorized_keys
+	-rw------- [username] [usergroup] id_rsa
+	-rw-r--r-- [username] [usergroup] id_rsa.pub
+	-rw-r--r-- [username] [usergroup] known_hosts
 
 3. Helpful troubleshooting command (verbose logging; execute on *server*):
 
-		ssh -v localhost
-
-* * *
+	ssh -v localhost
 
 
 

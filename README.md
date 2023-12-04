@@ -10,7 +10,8 @@ Instructions to help me get started setting up a fresh install.
 
 ## Maintenance
 
-- [Master list](https://github.com/FatherOfAlways/Setup/tree/main/Config/Other)
+- [General](https://github.com/FatherOfAlways/Setup/blob/main/Maintenance/General.md)
+- [SSH](https://github.com/FatherOfAlways/Setup/blob/main/Maintenance/SSH.md)
 
 ## Config
 

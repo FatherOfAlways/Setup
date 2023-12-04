@@ -41,6 +41,7 @@
 2. Install [`Oh My Posh`](https://ohmyposh.dev/):
 
 		brew install gcc
+
 		brew install jandedobbeleer/oh-my-posh/oh-my-posh
 
 3. Install Nerd font - `Meslo`:
@@ -146,6 +147,7 @@ An awesome collection of these commands can be found [here](https://git.herrbisc
 * Always Show Window Proxy Icons:
 
 		defaults write -g NSToolbarTitleViewRolloverDelay -float 0
+
 		defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true
 
 * Disable Homebrew Analytics:
@@ -168,6 +170,7 @@ An awesome collection of these commands can be found [here](https://git.herrbisc
 * Restart `ssh` service:
 
 		sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
+
 		sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist
 
 

@@ -32,12 +32,12 @@ Execute on *client*; The following command adds client's public key to server's 
 
 	PasswordAuthentication no
 	KbdInteractiveAuthentication no
-	PubkeyAuthentication yes				# May be "no" by default
+	PubkeyAuthentication yes		# May be "no" by default
 	UsePAM no
 
 *Optional:*
 
-	PermitRootLogin no						# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
+	PermitRootLogin no		# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
 
 ### Linux
 
@@ -50,7 +50,7 @@ Execute on *client*; The following command adds client's public key to server's 
 
 *Optional:*
 
-	PermitRootLogin no						# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
+	PermitRootLogin no		# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
 
 ### Windows
 
@@ -60,7 +60,7 @@ Passwordless:
 
 	PasswordAuthentication no
 	KbdInteractiveAuthentication no
-	# Match Group administrators												# Comment out to enable Admin users to log in
+	# Match Group administrators		# Comment out to enable Admin users to log in
 	# AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys		# Comment out to enable Admin users to log in
 
 CLI: Allow inbound connections on port 22:
@@ -116,15 +116,15 @@ Not sure which is correct:
 
 ### macOS
 
-* macOS (partial guide): https://medium.com/@stringmeteor/secure-your-macos-remote-ssh-access-by-disabling-password-access-68a92dd732d0
-* How to Enable SSH on a Mac from CLI: https://osxdaily.com/2016/08/16/enable-ssh-mac-command-line/
+* [acOS (partial guide)](https://medium.com/@stringmeteor/secure-your-macos-remote-ssh-access-by-disabling-password-access-68a92dd732d0)
+* [How to Enable SSH on a Mac from CLI](https://osxdaily.com/2016/08/16/enable-ssh-mac-command-line/)
 
 ### Linux
 
-* Linux (full guide): https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/
+* [Linux (full guide)](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
 
 ### Windows
 
-* Windows (full guide): https://gist.github.com/adamelliotfields/16dfac1bacf6d2eeada0582fdfbbb7b6
-* Key-based authentication in OpenSSH for Windows: https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement
-* Restart a Windows service from CLI: https://superuser.com/questions/301765/restart-a-windows-service-from-the-command-line
+* [Windows (full guide)](https://gist.github.com/adamelliotfields/16dfac1bacf6d2eeada0582fdfbbb7b6)
+* [Key-based authentication in OpenSSH for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
+* [Restart a Windows service from CLI](https://superuser.com/questions/301765/restart-a-windows-service-from-the-command-line)

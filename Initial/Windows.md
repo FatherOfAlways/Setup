@@ -78,6 +78,11 @@
 
 0. _Assumption: [**Windows Terminal**](https://github.com/microsoft/terminal), [**PowerShell 7**](https://github.com/PowerShell/PowerShell), [**winget**](https://github.com/microsoft/winget-cli) are already installed (through steps above or otherwise)._
 
+	_Just in case - PWSH / Terminal formulas below:_
+
+			winget install -e --id Microsoft.PowerShell
+			winget install -e --id Microsoft.WindowsTerminal
+
 1. Install [**Oh My Posh**](https://ohmyposh.dev/docs/installation/windows):
 
 		winget install JanDeDobbeleer.OhMyPosh -s winget

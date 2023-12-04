@@ -149,6 +149,11 @@ An awesome collection of these commands can be found [here](https://git.herrbisc
 		defaults write -g NSToolbarTitleViewRolloverDelay -float 0
 		defaults write com.apple.universalaccess showWindowTitlebarIcons -bool true
 
+* Expand Save Panel by Default
+
+		defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
+		defaults write -g NSNavPanelExpandedStateForSaveMode2 -bool true
+
 * Disable Homebrew Analytics:
 
 		brew analytics off

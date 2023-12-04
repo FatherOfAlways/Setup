@@ -76,7 +76,7 @@
 
 ## Shell
 
-0. _Assumption: [**Windows Terminal**](https://github.com/microsoft/terminal), [**PowerShell 7**](https://github.com/PowerShell/PowerShell), [**winget**](https://github.com/microsoft/winget-cli) already installed (in steps above)._
+0. _Assumption: [**Windows Terminal**](https://github.com/microsoft/terminal), [**PowerShell 7**](https://github.com/PowerShell/PowerShell), [**winget**](https://github.com/microsoft/winget-cli) are already installed (through steps above or otherwise)._
 
 1. Install [**Oh My Posh**](https://ohmyposh.dev/docs/installation/windows):
 

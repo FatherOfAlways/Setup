@@ -1,99 +1,88 @@
-<!DOCTYPE html>
-<html>
-	<body class="article">
-		<h2 id="cli">CLI</h2>
-		<ol start="0">
-			<li>
-				<p>Remove Message of the day:</p>
-				<pre><code>touch ~/.hushlogin</pre></code>
-			</li>
-			<li>
-				<p>Check current (if already <code>ZSH</code>, skip to step <strong>6</strong>):</p>
-				<pre><code>echo $SHELL</code></pre>
-			</li>
-			<li>
-				<p>Install <a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#ubuntu-debian--derivatives-windows-10-wsl--native-linux-kernel-with-windows-10-build-1903"><code>ZSH</code></a></p>
-				<pre><code>sudo apt update && sudo apt upgrade -y && sudo apt install zsh</code></pre>
-			</li>
-			<li>
-				<p>Append <a href="https://www.jakewiesler.com/blog/zsh-as-default-shell#append-zshs-executable-filepath-to-etcshells">ZSH&#39;s executable filepath to <code>/etc/shells</code></a>:</p>
-				<pre><code>command -v zsh | sudo tee -a /etc/shells</code></pre>
-			</li>
-			<li>
-				<p>Change current user&#39;s default shell to <code>ZSH</code>:</p>
-				<pre><code>sudo chsh -s $(which zsh) $USER</code></pre>
-			</li>
-			<li>
-				<p>Close the current terminal session and start a new one.</p>
-			</li>
-			<li>
-				<p>Check shell (should be <code>ZSH</code>):</p>
-				<pre><code>echo $SHELL</code></pre>
-			</li>
-			<li>
-				<p>Install <a href="https://ohmyposh.dev/"><code>Oh My Posh</code></a>.
-					<p>NOTE: You have to select the correct architecture!</p>
-					<ol>
-						<li>
-							<p><code>arm</code> (arm machine - e.g. Raspberry Pi):</p>
-							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-arm -O /usr/local/bin/oh-my-posh
-sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>
-						</li>
-						<li>
-							<p><code>amd64</code> (regular x86 machine):</p>
-							<pre><code>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
-sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>
-						</li>
-					</ol>
-				</p>
-			</li>
-			<li>
-				<p>Install Nerd font - <code>Meslo</code>:</p>
-				<pre><code>oh-my-posh font install</code></pre>
-			</li>
-			<li>
-				<p>Download <a href="https://github.com/FatherOfAlways/Setup/tree/main/Shell">my <code>Oh My Posh</code> themes</a>:</p>
-				<pre><code>cd ~
-mkdir ~/.poshthemes
-cd .poshthemes/
-wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/poshthemes/TheCollabShort-1.8.omp.json'</code></pre>
-				<em>(Check if the <code>wget</code> link above is still correct.)</em>
-			</li>
-			<li>
-				<p>Install <a href="https://ohmyz.sh/"><code>Oh My Zsh</code></a>:</p>
-				<pre><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code></pre>
-			</li>
-			<li>
-				<p>Install the following <code>Oh My Zsh</code> plugins:</p>
-				<ul>
-					<li>
-						<p><a href="https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh"><code>zsh-autosuggestions</code></a></p>
-						<pre><code>git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions</code></pre>
-					</li>
-					<li>
-						<p><a href="https://github.com/zsh-users/zsh-history-substring-search#install"><code>zsh-history-substring-search</code></a></p>
-						<pre><code>git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search</code></pre>
-					</li>
-					<li>
-						<p><a href="https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md"><code>zsh-syntax-highlighting</code></a></p>
-						<pre><code>git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting</code></pre>
-					</li>
-					<li>
-						<p><a href="https://github.com/MichaelAquilina/zsh-you-should-use#installation"><code>you-should-use</code></a></p>
-						<pre><code>git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use</code></pre>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<p>Edit <code>.zshrc</code></p>
-				<pre><code>cd ~
-nano .zshrc</code></pre>
-				<em>(Configuration uploaded <a href="https://github.com/FatherOfAlways/Setup/tree/main/zshrc">here</a>.)</em>
-			</li>
-			<li>
-				<p>Reload your profile for the changes to take effect:</p>
-				<pre><code>exec zsh</code></pre>
-			</li>
-		</ol>
-	</body>
-</html>
+## CLI
+
+1.  Remove Message of the day:
+
+		touch ~/.hushlogin
+
+2.  Check current (if already `ZSH`, skip to step **6**):
+
+		echo $SHELL
+
+3.  Install [`ZSH`](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#ubuntu-debian--derivatives-windows-10-wsl--native-linux-kernel-with-windows-10-build-1903)
+
+		sudo apt update && sudo apt upgrade -y && sudo apt install zsh
+
+4.  Append [ZSH's executable filepath to `/etc/shells`](https://www.jakewiesler.com/blog/zsh-as-default-shell#append-zshs-executable-filepath-to-etcshells):
+
+		command -v zsh | sudo tee -a /etc/shells
+
+5.  Change current user's default shell to `ZSH`:
+
+		sudo chsh -s $(which zsh) $USER
+
+6.  Close the current terminal session and start a new one.
+	
+7.  Check shell (should be `ZSH`):
+
+		echo $SHELL
+
+8.  Install [`Oh My Posh`](https://ohmyposh.dev/).
+
+	NOTE: You have to select the correct architecture!
+
+	1.  `arm` (ARM machine - e.g. Raspberry Pi):
+
+			sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-arm -O /usr/local/bin/oh-my-posh
+			sudo chmod +x /usr/local/bin/oh-my-posh
+
+	2.  `amd64` (regular x86 machine):
+
+			sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+			sudo chmod +x /usr/local/bin/oh-my-posh
+
+
+9.  Install Nerd font - `Meslo`:
+
+		oh-my-posh font install
+
+10. Download [my `Oh My Posh` themes](https://github.com/FatherOfAlways/Setup/tree/main/Shell):
+
+		cd ~
+		mkdir ~/.poshthemes
+		cd .poshthemes/
+		wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/poshthemes/TheCollabShort-1.8.omp.json'
+
+	_(Check if the `wget` link above is still correct.)_
+
+11.  Install [`Oh My Zsh`](https://ohmyz.sh/):
+
+		 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+12.  Install the following `Oh My Zsh` plugins:
+
+	 * [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+
+			git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+     * [`zsh-history-substring-search`](https://github.com/zsh-users/zsh-history-substring-search#install)
+
+			git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+
+     * [`zsh-syntax-highlighting`](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+
+			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+     * [`you-should-use`](https://github.com/MichaelAquilina/zsh-you-should-use#installation)
+
+			git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+
+13.  Edit `.zshrc`
+
+		 cd ~
+		 nano .zshrc
+
+	 _(Configuration uploaded [here.](https://github.com/FatherOfAlways/Setup/tree/main/zshrc))_
+
+14.  Reload your profile for the changes to take effect:
+
+		 exec zsh

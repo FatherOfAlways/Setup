@@ -10,18 +10,18 @@ Instructions to help me get started setting up a fresh install.
 
 ## Config
 
-- [Files](https://github.com/FatherOfAlways/Setup/tree/main/Config)
+- [Files](https://github.com/FatherOfAlways/Setup/tree/main/Config/Other)
 
 ### Bundles
 
-- [brewfile](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/brewfile)
-- [winget](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.json)
-- [choco](https://github.com/FatherOfAlways/Setup/blob/main/Bundles/packages.config)
+- [brewfile](https://github.com/FatherOfAlways/Setup/blob/main/Config/Bundles/brewfile)
+- [winget](https://github.com/FatherOfAlways/Setup/blob/main/Config/Bundles/packages.json)
+- [choco](https://github.com/FatherOfAlways/Setup/blob/main/Config/Bundles/packages.config)
 
 ### Shell
 
-- [iTerm](https://github.com/FatherOfAlways/Setup/tree/main/Shell/iTerm)
-- [posthemes](https://github.com/FatherOfAlways/Setup/tree/main/Shell/poshthemes)
-- [PowerShell](https://github.com/FatherOfAlways/Setup/tree/main/Shell/PowerShell)
-- [ssh](https://github.com/FatherOfAlways/Setup/tree/main/Shell/ssh)
-- [zshrc](https://github.com/FatherOfAlways/Setup/tree/main/Shell/zshrc)
+- [iTerm](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/iTerm)
+- [posthemes](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/poshthemes)
+- [PowerShell](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/PowerShell)
+- [ssh](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/ssh)
+- [zshrc](https://github.com/FatherOfAlways/Setup/tree/main/Config/Shell/zshrc)

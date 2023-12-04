@@ -53,6 +53,7 @@
 		wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/poshthemes/TheCollabShort-1.8.omp.json'
 
 	_(Check if the `wget` link above is still correct.)_
+
 11.  Install [`Oh My Zsh`](https://ohmyz.sh/):
 
 		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

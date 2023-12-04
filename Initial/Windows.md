@@ -80,8 +80,8 @@
 
 	_Just in case - PWSH / Terminal formulas below:_
 
-			winget install -e --id Microsoft.PowerShell
-			winget install -e --id Microsoft.WindowsTerminal
+		winget install -e --id Microsoft.PowerShell
+		winget install -e --id Microsoft.WindowsTerminal
 
 1. Install [**Oh My Posh**](https://ohmyposh.dev/docs/installation/windows):
 

@@ -81,7 +81,7 @@
 		cd ~
 		nano .zshrc
 
-	 _(Configuration uploaded [here](https://github.com/FatherOfAlways/Setup/tree/main/zshrc).)_
+	 _(Configuration uploaded [here.](https://github.com/FatherOfAlways/Setup/tree/main/zshrc))_
 
 14.  Reload your profile for the changes to take effect:
 

@@ -28,6 +28,7 @@
 2. Restore the following file to `~/Library/Application Support/iTerm2/DynamicProfiles` from backup:
 
 	* `iTermPersonalised.json`
+
 3. Restore the following file to `~/Library/Preferences` from backup:
 
 	* `com.googlecode.iterm2.plist`
@@ -41,6 +42,8 @@
 2. Install [`Oh My Posh`](https://ohmyposh.dev/):
 
 		brew install gcc
+
+	and
 
 		brew install jandedobbeleer/oh-my-posh/oh-my-posh
 

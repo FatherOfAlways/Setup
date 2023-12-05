@@ -1,7 +1,9 @@
-oh-my-posh.exe init pwsh --config "C:\Anchor\poshthemes\TheCollabShort-1.6.omp.json" | Invoke-Expression
+oh-my-posh.exe init pwsh --config "C:\Anchor\poshthemes\TheCollabShort-1.8.omp.json" | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 Import-Module -Name PSReadLine
+
+Import-Module posh-git
 
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView

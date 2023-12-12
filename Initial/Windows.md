@@ -133,9 +133,9 @@
 Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https://www.youtube.com/watch?v=zW69MisrsWk)
 
 
-**Check Execution Policy Status**
+Check Execution Policy Status
 
-			Get-ExecutionPolicy -List
+		Get-ExecutionPolicy -List
 
 
 **Disable Windows PowerShell 2.0**

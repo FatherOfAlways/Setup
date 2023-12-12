@@ -131,9 +131,6 @@
 
 ### [Script Execution Policy](https://www.youtube.com/watch?v=zW69MisrsWk)
 
-Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https://www.youtube.com/watch?v=zW69MisrsWk)
-
-
 **Disable Windows PowerShell 2.0**
 
 1. Open the Start menu and search for _"Turn Windows features on or off"_

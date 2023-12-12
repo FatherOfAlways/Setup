@@ -133,11 +133,6 @@
 Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https://www.youtube.com/watch?v=zW69MisrsWk)
 
 
-Check Execution Policy Status
-
-		Get-ExecutionPolicy -List
-
-
 **Disable Windows PowerShell 2.0**
 
 1. Open the Start menu and search for _"Turn Windows features on or off"_
@@ -178,6 +173,11 @@ Check Execution Policy Status
 5. Navigate to _Administrative Templates > PowerShell Core > Turn on Script Execution_
 
 6. Set it to _Enabled_, Check _Use Windows PowerShell Policy setting_ checkbox, and set the _Execution Policy_ to _Allow local scripts and remote signed scripts_.
+
+
+**Check Execution Policy Status**
+
+		Get-ExecutionPolicy -List
 
 
 ### 1Password SSH Agent

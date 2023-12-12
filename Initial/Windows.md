@@ -14,17 +14,24 @@
 [**Debloat Windows 11 Installation**](https://www.youtube.com/watch?v=mZm6mY3I7J4)
 
 1. On the first screen, under _Time and currency format_, select `English (World)`
+
 2. During the installation you may receive `OOBEREGION` error - not to worry, this is normal
+
 3. Once Windows is installed, navigate to _Settings > Time & language > Language & region > Region > Country or region_ and set the correct region.
+
 
 [**Bypass Microsoft Account Requirement in Windows 11**](https://hwbusters.com/quick-tips/quick-tips-6-bypass-microsoft-account-in-windows-11-the-hard-way/)
 
 1. Physically disconnect network cable from computer.
+
 2. Follow the installer until it asks to connect to Wifi
+
 3. Bring up the Command Prompt _(Shift+F10)_
+
 4. Enter the following and hit _Enter_:
 
 		OOBE\BYPASSNRO
+
 5. Sign in to Microsoft account after the installation completes.
 
 

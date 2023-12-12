@@ -132,22 +132,31 @@
 
 Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https://www.youtube.com/watch?v=zW69MisrsWk)
 
+
 **Check Execution Policy Status**
 
 		Get-ExecutionPolicy -List
 
+
 **Disable Windows PowerShell 2.0**
 
 1. Open the Start menu and search for _"Turn Windows features on or off"_
+
 2. Find _Windows PowerShell 2.0_
+
 3. Uncheck the box next to it
+
 4. Click _OK_.
+
 
 **Set Windows PowerShell Execution Policy**
 
 1. Open _Group Policy Editor_
+
 2. Navigate to _Administrative Templates > Windows Components > Windows PowerShell > Turn on Script Execution_
+
 3. Set it to _Enabled_ and the _Execution Policy_ to _Allow local scripts and remote signed scripts_.
+
 
 **Set PowerShell 7 Execution Policy**
 
@@ -156,12 +165,45 @@ Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https:
 		$PSHOME
 
 1. Navigate to that location
+
 2. Make sure the `InstallPSCorePolicyDefinitions.ps1` file exists
+
 3. Run the following commands:
 
 		cd "C:\Program Files\PowerShell\7"
 		.\InstallPSCorePolicyDefinitions.ps1
 
 4. Open _Group Policy Editor_
+
 5. Navigate to _Administrative Templates > PowerShell Core > Turn on Script Execution_
+
 6. Set it to _Enabled_, Check _Use Windows PowerShell Policy setting_ checkbox, and set the _Execution Policy_ to _Allow local scripts and remote signed scripts_.
+
+
+### 1Password SSH Agent
+
+1. **Turn On the 1Password SSH Agent**
+
+	1. Open **1Password**
+	2. Go to _Settings > Developer_
+	3. Check _Use the SSH agent_.
+
+	To make sure the SSH agent keeps running, even when the 1Password app is closed:
+	1. Go to _Settings > General_
+	2. Check _Keep 1Password in the notification area_.
+
+
+2. **Disable OpenSSH Authentication Agent Service**
+
+	1. Open **Services**
+	2. Find the _OpenSSH Authentication Agent_ on the list
+	3. Change _Startup type_ to _Disabled_
+	4. Click OK
+	5. Restart the computer.
+
+
+3. **Configure Your SSH or Git Client**
+
+	To use the SSH agent with Git, configure the core.sshCommand variable in your Git config to use Microsoft OpenSSH:
+
+		git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"

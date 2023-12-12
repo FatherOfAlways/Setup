@@ -14,19 +14,14 @@
 [**Debloat Windows 11 Installation**](https://www.youtube.com/watch?v=mZm6mY3I7J4)
 
 1. On the first screen, under _Time and currency format_, select `English (World)`
-
 2. During the installation you may receive `OOBEREGION` error - not to worry, this is normal
-
 3. Once Windows is installed, navigate to _Settings > Time & language > Language & region > Region > Country or region_ and set the correct region.
 
 [**Bypass Microsoft Account Requirement in Windows 11**](https://hwbusters.com/quick-tips/quick-tips-6-bypass-microsoft-account-in-windows-11-the-hard-way/)
 
 1. Physically disconnect network cable from computer.
-
 2. Follow the installer until it asks to connect to Wifi
-
 3. Bring up the Command Prompt _(Shift+F10)_
-
 4. Enter the following and hit _Enter_:
 
 		OOBE\BYPASSNRO
@@ -136,20 +131,15 @@ Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https:
 **Disable Windows PowerShell 2.0**
 
 1. Open the Start menu and search for _"Turn Windows features on or off"_
-
 2. Find _Windows PowerShell 2.0_
-
 3. Uncheck the box next to it
-
 4. Click _OK_.
 
 
 **Set Windows PowerShell Execution Policy**
 
 1. Open _Group Policy Editor_
-
 2. Navigate to _Administrative Templates > Windows Components > Windows PowerShell > Turn on Script Execution_
-
 3. Set it to _Enabled_ and the _Execution Policy_ to _Allow local scripts and remote signed scripts_.
 
 
@@ -160,18 +150,14 @@ Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https:
 		$PSHOME
 
 1. Navigate to that location
-
 2. Make sure the `InstallPSCorePolicyDefinitions.ps1` file exists
-
 3. Run the following commands:
 
 		cd "C:\Program Files\PowerShell\7"
 		.\InstallPSCorePolicyDefinitions.ps1
 
 4. Open _Group Policy Editor_
-
 5. Navigate to _Administrative Templates > PowerShell Core > Turn on Script Execution_
-
 6. Set it to _Enabled_, Check _Use Windows PowerShell Policy setting_ checkbox, and set the _Execution Policy_ to _Allow local scripts and remote signed scripts_.
 
 

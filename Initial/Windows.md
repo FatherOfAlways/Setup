@@ -129,7 +129,7 @@
 		C:\Users\USERNAME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 
 
-### Script Execution Policy
+### [Script Execution Policy](https://www.youtube.com/watch?v=zW69MisrsWk)
 
 Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https://www.youtube.com/watch?v=zW69MisrsWk)
 
@@ -172,7 +172,7 @@ Tutorial followed: [Disable These 3 Windows Settings Now! (For Security)](https:
 	Get-ExecutionPolicy -List
 
 
-### 1Password SSH Agent
+### [1Password SSH Agent](https://developer.1password.com/docs/ssh/get-started/)
 
 1. **Turn On the 1Password SSH Agent**
 

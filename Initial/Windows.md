@@ -23,9 +23,7 @@
 2. Follow the installer until it asks to connect to Wifi
 3. Bring up the Command Prompt _(Shift+F10)_
 4. Enter the following and hit _Enter_:
-
 		OOBE\BYPASSNRO
-
 5. Sign in to Microsoft account after the installation completes.
 
 

@@ -135,3 +135,4 @@ Not sure which is correct:
 * [Full guide](https://gist.github.com/adamelliotfields/16dfac1bacf6d2eeada0582fdfbbb7b6)
 * [Key-based authentication in OpenSSH for Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
 * [Restart a Windows service from CLI](https://superuser.com/questions/301765/restart-a-windows-service-from-the-command-line)
+* [OpenSSH Server configuration for Windows Server and Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration)

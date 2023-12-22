@@ -24,9 +24,11 @@ Execute on *client*; The following command adds client's public key to server's 
 
 
 
-## Server Config
+## Server Config (`sshd_config`)
 
 ### macOS
+
+**Config location:** `/private/etc/ssh/`
 
 *Required:*
 
@@ -41,6 +43,8 @@ Execute on *client*; The following command adds client's public key to server's 
 
 ### Linux
 
+**Config location:** `/etc/ssh/`
+
 *Required:*
 
 	PasswordAuthentication no
@@ -53,6 +57,8 @@ Execute on *client*; The following command adds client's public key to server's 
 	PermitRootLogin no		# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
 
 ### Windows
+
+**Config location:** `%programdata%\ssh\`
 
 *Required:*
 
@@ -109,6 +115,7 @@ Not sure which is correct:
 3. Helpful troubleshooting command (verbose logging; execute on *server*):
 
 	ssh -v localhost
+	ssh -v YOUR_LOCAL_IP
 
 
 

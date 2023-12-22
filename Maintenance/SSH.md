@@ -26,6 +26,8 @@ Execute on *client*; The following command adds client's public key to server's 
 
 ## Server Config (`sshd_config`)
 
+*Note:* you may need to restart the SSH Server for any changes to take effect.
+
 ### macOS
 
 **Config location:** `/private/etc/ssh/`

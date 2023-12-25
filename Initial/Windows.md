@@ -63,6 +63,8 @@
 
 ## Tweaks
 
+### Required
+
 1. Set up [**Resilio Sync**](https://www.resilio.com/):
 
 	1. [**Link new device**](https://help.resilio.com/hc/en-us/articles/205457815-Sync-Private-Identity-Linking-My-Devices) to Identity (as **Disconnected!**).
@@ -80,7 +82,36 @@
 	3. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Language bar > Hidden - _Must be selected_
 	4. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Advanced Key Settings - _Disable the hotkeys_
 
-5. Apply tweaks from `Tweaks` folder.
+5. Disable [**Clipboard History**](https://www.elevenforum.com/t/enable-or-disable-clipboard-history-in-windows-11.973/) either by running [this reg file](https://www.elevenforum.com/) or doing it manually:
+
+	1. Win+R > `gpedit.msc` (Local Group Policy Editor)
+	2. Navigate to `Computer Configuration\Administrative Templates\System\OS Policies`
+	3. Open the *Allow Clipboard History* policy
+	4. Select *Not Configured* and click *OK*
+	5. Restart the computer to apply
+
+6. Disable Caps Lock through one of the options below:
+
+	* [PowerToys](https://www.ricksdailytips.com/disable-caps-lock-key/) - *Preferred option*
+	* [NumLocker](https://www.makeuseof.com/windows-10-11-disable-caps-lock/#how-to-disable-caps-lock-with-numlocker)
+	* [Regedit](https://www.makeuseof.com/windows-10-11-disable-caps-lock/#how-to-disable-caps-lock-by-editing-the-registry)
+
+### Optional
+
+1. [Change Boot Order](https://www.intowindows.com/4-ways-to-change-the-boot-order-in-windows-10/):
+
+	1. Win+R > `msconfig`  (System Configuration)
+	2. Switch to *Boot* tab
+	3. Select the desired operating system and click *Set as default*, then click *OK*
+
+2. [Change OS Name in Boot Options at Startup](https://www.tenforums.com/tutorials/22540-change-operating-system-name-boot-options-startup-windows-10-a.html):
+
+	1. Open an elevated command prompt
+	2. Type `bcdedit` and press Enter.
+	3. Under each Windows Boot Loader section, look for the OS description you want to change the name of, and make a note of its identifier
+	4. Type the command below in the command prompt, and press *Enter*:
+
+			bcdedit /set {IDENTIFIER} description "NEW_NAME"
 
 
 ## Shell

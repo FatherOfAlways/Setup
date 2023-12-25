@@ -116,18 +116,19 @@
 
 ## Shell
 
-0. _Assumption: [**Windows Terminal**](https://github.com/microsoft/terminal), [**PowerShell 7**](https://github.com/PowerShell/PowerShell), [**winget**](https://github.com/microsoft/winget-cli) are already installed (through steps above or otherwise)._
+1. _Assumption: [**Windows Terminal**](https://github.com/microsoft/terminal), [**PowerShell 7**](https://github.com/PowerShell/PowerShell), [**winget**](https://github.com/microsoft/winget-cli), [OpenSSH](https://github.com/PowerShell/Win32-OpenSSH) are already installed (through steps above or otherwise)._
 
 	_Just in case - formulas below:_
 
 		winget install -e --id Microsoft.PowerShell
 		winget install -e --id Microsoft.WindowsTerminal
+		winget install -e --id Microsoft.OpenSSH.Beta
 
-1. Install [**Oh My Posh**](https://ohmyposh.dev/docs/installation/windows):
+2. Install [**Oh My Posh**](https://ohmyposh.dev/docs/installation/windows):
 
 		winget install JanDeDobbeleer.OhMyPosh -s winget
 
-2. Install [**Nerd Fonts**](https://www.nerdfonts.com/)
+3. Install [**Nerd Fonts**](https://www.nerdfonts.com/)
 
 	1. Run the [**`oh-my-posh installer`**](https://ohmyposh.dev/docs/installation/fonts):
 
@@ -141,23 +142,29 @@
 
 	5. _ALTERNATIVE: Install [**`MesloLGS NF Regular.ttf`**](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf) manually._
 
-3. Install [**Modules**](https://www.powershellgallery.com/):
+4. Install [**Modules**](https://www.powershellgallery.com/):
 
 		Install-Module -Name PSReadLine -RequiredVersion 2.2.2
 		Install-Module -Name Terminal-Icons
 
-4. Edit `$profile`:
+5. Edit `$profile`:
 
 		notepad $profile
 
-5. Restore [**PowerShell**](https://github.com/PowerShell/PowerShell) Profiles from backup:
+6. Restore [**PowerShell**](https://github.com/PowerShell/PowerShell) Profiles from backup:
 
 		C:\Users\USERNAME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 		C:\Users\USERNAME\Documents\PowerShell\Microsoft.VSCode_profile.ps1
 
-6. Restore [**Windows Terminal**](https://github.com/microsoft/terminal) Settings:
+7. Restore [**Windows Terminal**](https://github.com/microsoft/terminal) Settings:
 
 		C:\Users\USERNAME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+
+8. Configure **Open SSH** - instructions [here]().
+
+9. Set [PowerShell as default over SSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration#configuring-the-default-shell-for-openssh-in-windows):
+
+		New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Program Files\PowerShell\7\pwsh.exe" -PropertyType String -Force
 
 
 ### [Script Execution Policy](https://www.youtube.com/watch?v=zW69MisrsWk)

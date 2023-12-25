@@ -1,3 +1,18 @@
+## Install OpenSSH Server
+
+### macOS / Linux
+
+Already installed.
+
+### Windows
+
+`winget`:
+
+	winget install -e --id Microsoft.OpenSSH.Beta
+
+You can also do it [manually](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui) (loser).
+
+
 ## Create SSH Keypair on Client
 
 Enter command and follow the instructions:

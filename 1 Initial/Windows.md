@@ -96,6 +96,17 @@
 	* [NumLocker](https://www.makeuseof.com/windows-10-11-disable-caps-lock/#how-to-disable-caps-lock-with-numlocker)
 	* [Regedit](https://www.makeuseof.com/windows-10-11-disable-caps-lock/#how-to-disable-caps-lock-by-editing-the-registry)
 
+7. Adjust your screen's dynamic range (nVidia only):
+
+	1. Open *nVidia Control Panel*
+	2. Navigate to *Display > Change resolution > 3. Apply the following settings*
+	3. Select the following dropdown options:
+
+		* *Desktop color depth:* **Highest (32-bit)**
+		* *Output color format:* **RGB**
+		* *Output color depth:* **10 bpc**
+		* *Output dynamic range:* **Full**
+
 ### Optional
 
 1. [Change Boot Order](https://www.intowindows.com/4-ways-to-change-the-boot-order-in-windows-10/):

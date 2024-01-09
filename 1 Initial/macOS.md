@@ -33,6 +33,7 @@
 
 	* `com.googlecode.iterm2.plist`
 
+
 ## Shell
 
 1. Remove Message of the day from Terminal:
@@ -103,10 +104,15 @@
 
 	* `lsd`
 
-12. Restore the `iTermPersonalised.json` Profile from backup to [**iTerm**](https://iterm2.com/) user folder:
+12. Enable [Touch ID for `sudo`](https://sixcolors.com/post/2023/08/in-macos-sonoma-touch-id-for-sudo-can-survive-updates/):
 
-		~/Library/Application Support/iTerm2/DynamicProfiles
+	1. Navigate to the authentication directory > copy template to system-readable file > open in text editor:
 
+			cd /etc/pam.d
+			sudo cp sudo_local.template sudo_local
+			sudo nano sudo_local
+
+	2. Uncomment row with `pam_tid.so` and save the changes (⌃X, ↩).
 
 ## System
 
@@ -161,17 +167,17 @@ An awesome collection of these commands can be found [here](https://git.herrbisc
 
 ## SSH
 
-* Restore the following file to `/private/etc/ssh` from backup:
+1. Restore the following file to `/private/etc/ssh` from backup:
 
 	* `sshd_config`
 
-* Restore the following files to `~/.ssh` from backup:
+2. Restore the following files to `~/.ssh` from backup:
 
 	* `authorized_keys`
 	* `config`
 	* `known_hosts`
 
-* Restart `ssh` service:
+3. Restart `ssh` service:
 
 		sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
 		sudo launchctl unload -w /System/Library/LaunchDaemons/ssh.plist

@@ -18,4 +18,4 @@ URL: [chrome://flags/](chrome://flags/)
 
 ## Extension Settings
 
-Can be found here.
+Can be found [here](https://github.com/FatherOfAlways/Setup/tree/main/3%20Config/Chrome).

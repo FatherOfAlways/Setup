@@ -14,23 +14,20 @@
 [**Debloat Windows 11 Installation**](https://www.youtube.com/watch?v=mZm6mY3I7J4)
 
 1. On the first screen, under _Time and currency format_, select `English (World)`
-
 2. During the installation you may receive `OOBEREGION` error - not to worry, this is normal
-
 3. Once Windows is installed, navigate to _Settings > Time & language > Language & region > Region > Country or region_ and set the correct region.
 
 
 [**Bypass Microsoft Account Requirement in Windows 11**](https://hwbusters.com/quick-tips/quick-tips-6-bypass-microsoft-account-in-windows-11-the-hard-way/)
 
 1. Physically disconnect network cable from computer.
-
 2. Follow the installer until it asks to connect to Wifi
-
 3. Bring up the Command Prompt _(Shift+F10)_
-
 4. Enter the following and hit _Enter_:
 
-		OOBE\BYPASSNRO
+	```
+	OOBE\BYPASSNRO
+	```
 
 5. Sign in to Microsoft account after the installation completes.
 
@@ -46,17 +43,23 @@
 	3. Run PowerShell as Admin
 	4. Execute: `add-appxpackage "\PATH\TO\DOWNLOADED\FILE"`
 
-3. Install [`choco`](https://chocolatey.org/install)
+3. Install [`choco`](https://chocolatey.org/install):
 
-		Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+	```
+	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+	```
 
 4. Install `winget` packages from [**export**](https://www.dropbox.com/sh/b00ss7490cw85el/AADWWWtufV2_Gd9xLIOrN9OYa?dl=0):
 
-		winget import -i "\PATH\TO\DOWNLOADED\EXPORT.json"
+	```
+	winget import -i "\PATH\TO\DOWNLOADED\EXPORT.json"
+	```
 
 5. Install `choco` packages from [**export**](https://www.dropbox.com/sh/nnnxiqfkyn2k1ye/AAAkW8zn-hPDizY1nedZAWQra?dl=0):
 
-		choco install -y "\PATH\TO\DOWNLOADED\EXPORT.config"
+	```
+	choco install -y "\PATH\TO\DOWNLOADED\EXPORT.config"
+	```
 
 6. Install the rest manually.
 	
@@ -122,7 +125,9 @@
 	3. Under each Windows Boot Loader section, look for the OS description you want to change the name of, and make a note of its identifier
 	4. Type the command below in the command prompt, and press *Enter*:
 
-			bcdedit /set {IDENTIFIER} description "NEW_NAME"
+		```
+		bcdedit /set {IDENTIFIER} description "NEW_NAME"
+		```
 
 
 ## Shell
@@ -131,51 +136,64 @@
 
 	_Just in case - formulas below:_
 
-		winget install -e --id Microsoft.PowerShell
-		winget install -e --id Microsoft.WindowsTerminal
-		winget install -e --id Microsoft.OpenSSH.Beta
+	```
+	winget install -e --id Microsoft.PowerShell
+	winget install -e --id Microsoft.WindowsTerminal
+	winget install -e --id Microsoft.OpenSSH.Beta
+	```
 
 2. Install [**Oh My Posh**](https://ohmyposh.dev/docs/installation/windows):
 
-		winget install JanDeDobbeleer.OhMyPosh -s winget
+	```
+	winget install JanDeDobbeleer.OhMyPosh -s winget
+	```
 
-3. Install [**Nerd Fonts**](https://www.nerdfonts.com/)
+3. Install [**Nerd Fonts**](https://www.nerdfonts.com/):
 
 	1. Run the [**`oh-my-posh installer`**](https://ohmyposh.dev/docs/installation/fonts):
 
-			oh-my-posh font install
+		```
+		oh-my-posh font install
+		```
 
 	2. Install `Meslo`.
-
 	3. Restart Terminal.
-
 	4. Terminal > Settings (Ctrl + ,) > Profiles > Defaults > Apperance > Font Face > `MesloLGSDZ NF`.
-
 	5. _ALTERNATIVE: Install [**`MesloLGS NF Regular.ttf`**](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf) manually._
 
 4. Install [**Modules**](https://www.powershellgallery.com/):
 
-		Install-Module -Name PSReadLine -RequiredVersion 2.2.2
-		Install-Module -Name Terminal-Icons
+	```
+	Install-Module -Name PSReadLine -RequiredVersion 2.2.2
+	Install-Module -Name Terminal-Icons
+	```
 
 5. Edit `$profile`:
 
-		notepad $profile
+	```
+	notepad $profile
+	```
 
 6. Restore [**PowerShell**](https://github.com/PowerShell/PowerShell) Profiles from backup:
 
-		C:\Users\USERNAME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
-		C:\Users\USERNAME\Documents\PowerShell\Microsoft.VSCode_profile.ps1
+	```
+	C:\Users\USERNAME\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+	C:\Users\USERNAME\Documents\PowerShell\Microsoft.VSCode_profile.ps1
+	```
 
 7. Restore [**Windows Terminal**](https://github.com/microsoft/terminal) Settings:
 
-		C:\Users\USERNAME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+	```
+	C:\Users\USERNAME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+	```
 
 8. Configure **Open SSH** - instructions [here]().
 
 9. Set [PowerShell as default over SSH](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration#configuring-the-default-shell-for-openssh-in-windows):
 
-		New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Program Files\PowerShell\7\pwsh.exe" -PropertyType String -Force
+	```
+	New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Program Files\PowerShell\7\pwsh.exe" -PropertyType String -Force
+	```
 
 
 ### [Script Execution Policy](https://www.youtube.com/watch?v=zW69MisrsWk)
@@ -199,14 +217,18 @@
 
 0. Check for PowerShell 7 location (in this case _C:\Program Files\PowerShell\7_):
 
-		$PSHOME
+	```
+	$PSHOME
+	```
 
 1. Navigate to that location
 2. Make sure the `InstallPSCorePolicyDefinitions.ps1` file exists
 3. Run the following commands:
 
-		cd "C:\Program Files\PowerShell\7"
-		.\InstallPSCorePolicyDefinitions.ps1
+	```
+	cd "C:\Program Files\PowerShell\7"
+	.\InstallPSCorePolicyDefinitions.ps1
+	```
 
 4. Open _Group Policy Editor_
 5. Navigate to _Administrative Templates > PowerShell Core > Turn on Script Execution_
@@ -215,8 +237,9 @@
 
 **Check Execution Policy Status**
 
-	Get-ExecutionPolicy -List
-
+```
+Get-ExecutionPolicy -List
+```
 
 ### [1Password SSH Agent](https://developer.1password.com/docs/ssh/get-started/)
 
@@ -244,4 +267,6 @@
 
 	To use the SSH agent with Git, configure the core.sshCommand variable in your Git config to use Microsoft OpenSSH:
 
-		git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
+	```
+	git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
+	```

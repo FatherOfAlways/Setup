@@ -2,18 +2,18 @@
 
 Installation [`log2ram`](https://github.com/azlux/log2ram):
 
-	```
-	echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ bookworm main" | sudo tee /etc/apt/sources.list.d/azlux.list
-	sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
-	sudo apt update && sudo apt upgrade -y
-	sudo apt install log2ram
-	```
+```
+echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ bookworm main" | sudo tee /etc/apt/sources.list.d/azlux.list
+sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
+sudo apt update && sudo apt upgrade -y
+sudo apt install log2ram
+```
 
 Check:
 
-	```
-	systemctl status log2ram
-	```
+```
+systemctl status log2ram
+```
 
 
 ## CLI
@@ -143,33 +143,33 @@ Check:
 
 Installation [`tightvncserver`](https://www.tightvnc.com/download.php):
 
-	```
-	sudo apt-get update && sudo apt-get upgrade
-	sudo apt-get install tightvncserver
-	```
+```
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install tightvncserver
+```
 
 Configuration: 
 	
-	```
-	vncserver
-	```
+```
+vncserver
+```
 
 Usage:
 
-	 * Check if TightVNC is running (checking for port 5901):
+* Check if TightVNC is running (checking for port 5901):
 
-		```
-		netstat -na | grep "5901"
-		```
+	```
+	netstat -na | grep "5901"
+	```
 
-	 * Run TightVNC desktop on port 5901:
+* Run TightVNC desktop on port 5901:
 
-		```
-		vncserver -geometry 1920x1080 -depth 24 :1
-		```
+	```
+	vncserver -geometry 1920x1080 -depth 24 :1
+	```
 
-	 * Quit TightVNC desktop on port 5901:
+* Quit TightVNC desktop on port 5901:
 
-		```
-		vncserver -kill :1
-		```
+	```
+	vncserver -kill :1
+	```

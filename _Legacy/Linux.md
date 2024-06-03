@@ -57,7 +57,7 @@ sudo chmod +x /usr/local/bin/oh-my-posh</code></pre>
 mkdir ~/.poshthemes
 cd .poshthemes/
 wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/3%20Config/Shell/poshthemes/TheCollabShort-1.9.omp.json'</code></pre>
-				<em>(Check if the <code>wget</code> link above is still correct.)</em>
+				<em>(Check if the <code>wget</code> link above is still correct.) </em>
 			</li>
 			<li>
 				<p>Install <a href="https://ohmyz.sh/"><code>Oh My Zsh</code></a>:</p>

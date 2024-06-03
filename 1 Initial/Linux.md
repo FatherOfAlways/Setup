@@ -68,7 +68,7 @@
 	cd ~
 	mkdir ~/.poshthemes
 	cd .poshthemes/
-	wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/Shell/poshthemes/TheCollabShort-1.8.omp.json'
+	wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/main/3%20Config/Shell/poshthemes/TheCollabShort-1.9.omp.json'
 	```
 
 	_(Check if the `wget` link above is still correct.)_

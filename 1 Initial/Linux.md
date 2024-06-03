@@ -15,6 +15,13 @@ Check:
 systemctl status log2ram
 ```
 
+Increase RAM usage:
+
+```
+sudo nano /etc/log2ram.conf
+sudo reboot
+```
+
 
 ## CLI
 

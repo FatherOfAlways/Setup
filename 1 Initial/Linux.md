@@ -112,7 +112,7 @@
 		nano .zshrc
 		```
 
-	 _(Configuration uploaded [here.](https://github.com/FatherOfAlways/Setup/tree/main/zshrc))_
+	 _(Configuration uploaded [here.](https://github.com/FatherOfAlways/Setup/blob/main/3%20Config/Shell/zshrc/.zshrc%20-%20Pi))_
 
 14.  Reload your profile for the changes to take effect:
 

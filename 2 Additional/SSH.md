@@ -67,6 +67,7 @@ Execute on *client*; The following command adds client's public key to server's 
 	PasswordAuthentication no
 	ChallengeResponseAuthentication no		# Older versions only; obsolete
 	KbdInteractiveAuthentication no			# New version of "KbdInteractiveAuthentication"
+	PubkeyAuthentication yes				# May be "no" by default
 	UsePAM no
 
 *Optional:*

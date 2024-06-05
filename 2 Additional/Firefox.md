@@ -36,7 +36,7 @@ URL: [`about:config`](about:config)
 
 	3. Check the following boxes:
 
-		*Advanced settings > Enable browser chrome and add-on debugging toolboxes*
+		*Advanced settings > Enable browser chrome and add-on debugging toolboxes*  
 		*Advanced settings > Enable remote debugging*
 	
 	4. Open *Tools > Browser Tools > Browser toolbox*

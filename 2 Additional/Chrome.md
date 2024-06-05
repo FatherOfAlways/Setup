@@ -1,6 +1,6 @@
 ## Flags
 
-URL: [chrome://flags/](chrome://flags/)
+URL: [`chrome://flags/`](chrome://flags/)
 
 **Cross-platform:**
 

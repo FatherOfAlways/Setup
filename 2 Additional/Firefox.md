@@ -1,6 +1,6 @@
 ## Config
 
-URL: [about:config](about:config)
+URL: [`about:config`](about:config)
 
 **Cross-platform:**
 

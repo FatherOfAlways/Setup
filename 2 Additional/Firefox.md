@@ -20,8 +20,8 @@ URL: [`about:config`](about:config)
 
 * Enable the following flags in [`about:config`](about:config):
 
-* `toolkit.legacyUserProfileCustomizations.stylesheets`: **true** - enable custom stylesheets
-* `widget.macos.native-context-menus`: **false** - disable native context menus
+	* `toolkit.legacyUserProfileCustomizations.stylesheets`: **true** - enable custom stylesheets
+	* `widget.macos.native-context-menus`: **false** - disable native context menus
 
 * Quick access to user's profile folder:
 

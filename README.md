@@ -8,6 +8,11 @@ Instructions to help me get started setting up a fresh install.
 - [Windows](https://github.com/FatherOfAlways/Setup/blob/main/1%20Initial/Windows.md)
 - [Linux](https://github.com/FatherOfAlways/Setup/blob/main/1%20Initial/Linux.md)
 
+## Additional
+
+- [Chrome](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/Chrome.md)
+- [Firefox](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/Firefox.md)
+
 ## Maintenance
 
 - [General](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/General.md)

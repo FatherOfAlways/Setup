@@ -1,0 +1,75 @@
+/*** CONTEXT MENUS ***/
+
+@import url("./simpleMenuWizard.css");
+
+/* Page context menu (extensions) - hide single items */
+/* #contentAreaContextMenu menuitem[label*="PUT_A_WORD_TO_SEARCH_FOR_HERE"] { display: none !important; } */
+
+#contentAreaContextMenu menuitem[label*="Create new bookmark"] { display: none !important; }
+#contentAreaContextMenu menuitem[label*="Open in New Discarded Tab"] { display: none !important; }
+#contentAreaContextMenu menuitem[label*="Save link"] { display: none !important; }
+
+/* Page context menu (extensions) - hide items that expand another menu */
+/* #contentAreaContextMenu menu[label*="PUT_A_WORD_TO_SEARCH_FOR_HERE"] { display: none !important; } */
+
+#contentAreaContextMenu menu[label*="Flagfox"] { display: none !important; }
+#contentAreaContextMenu menu[label*="1Password"] { display: none !important; }
+#contentAreaContextMenu menu[label*="Raindrop.io"] { display: none !important; }
+#contentAreaContextMenu menu[label*="Bitwarden"] { display: none !important; }
+
+
+/*** TAB BAR ***/
+
+.titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
+  width: 10px !important;
+}
+
+.tabbrowser-tab {
+  position: relative;
+}
+
+.tabbrowser-tab:after {
+  content: '';
+  height: 50%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  background-color: #3D3D3D;
+  transform: translate(0, -50%);
+}
+
+#tabbrowser-arrowscrollbox .tabbrowser-tab:last-of-type:after {
+  display: none;
+}
+
+
+
+
+/*** BOOKMARKS ***/
+
+#PlacesToolbarItems {
+  margin-bottom: 2px !important;
+}
+
+#PlacesToolbarItems > toolbarseparator {
+  padding-inline: 11px !important;
+}
+
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
+  margin-inline-end: 6px !important;
+  margin-bottom: -1px !important;
+  opacity: 0.6 !important;
+}
+
+.bookmark-item > .toolbarbutton-text {
+  opacity: 0.6 !important;
+}
+
+.bookmark-item {
+  margin: 5px !important;
+}
+
+.toolbar-menupopup .bookmark-item {
+  margin: 1px !important;
+}

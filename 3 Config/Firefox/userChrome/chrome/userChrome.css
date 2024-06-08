@@ -20,29 +20,52 @@
 
 /*** TAB BAR ***/
 
+
 .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {
   width: 10px !important;
 }
 
+/* Tab Separators */
 .tabbrowser-tab {
   position: relative;
 }
 
+/* Tab Separators */
 .tabbrowser-tab:after {
   content: '';
   height: 50%;
   width: 1px;
   position: absolute;
-  right: 0;
+  right: -0.5px;
   top: 50%;
   background-color: #3D3D3D;
   transform: translate(0, -50%);
 }
 
+/* Empty space left/right of tabs? not sure */
 #tabbrowser-arrowscrollbox .tabbrowser-tab:last-of-type:after {
   display: none;
 }
 
+#tabbrowser-tabs {
+  --tab-min-width: 40px !important;
+}
+
+/* Position Close button to the middle of tab when tab size is minimal; don't move it */
+.tab-close-button {
+  margin-left: -26px;
+  z-index: 1000;
+  width: 24px !important;
+  padding: 6px 0px !important;
+  color: transparent !important;
+}
+
+.tabbrowser-tab:hover .close-icon {
+  background-color: #55545F !important;
+  color: initial !important;
+}
+
+/* Close button hover background */
 
 
 

@@ -10,6 +10,7 @@ Instructions to help me get started setting up a fresh install.
 
 ## Additional
 
+- [Firefox](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/Brave.md)
 - [Chrome](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/Chrome.md)
 - [Firefox](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/Firefox.md)
 

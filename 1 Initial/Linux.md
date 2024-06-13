@@ -144,6 +144,22 @@ sudo reboot
 		exec zsh
 		```
 
+15. Enable `nano` [syntax highlighting](https://gist.github.com/BlakeGardner/5587269):
+
+	 1. Install `nano` and [`nanorc`](https://github.com/scopatz/nanorc) via package manager:
+
+		```
+		brew install nano nanorc
+		```
+
+	 2. Update your `nanorc` file:
+
+		```
+		echo 'include "'"$(brew --cellar nano)"'/*/share/nano/*.nanorc"' >> ~/.nanorc
+		```
+
+	 3. Close the current terminal session and start a new one.
+
 
 ## TightVNC
 

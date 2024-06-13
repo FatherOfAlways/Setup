@@ -17,14 +17,21 @@
         },
         {
           "type": "session",
-          "background_templates": [
-            "{{ if eq .Var.SSHSession }}#CB3B00{{ else }}#26BDBB{{ end }}"
-          ],
+          "background": "#CB3B00",
+          "foreground": "#FFFFFF",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ if .SSHSession }}\uF817{{ end }} "
+        },
+        {
+          "type": "session",
+          "background": "#26BDBB",
           "foreground": "#0C212F",
           "style": "diamond",
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
-          "template": "{{ if .SSHSession }} \uF817 \ue0b1{{ end }} \uf007 {{ .UserName }} "
+          "template": " \uf007 {{ .UserName }} "
         },
         {
           "type": "path",

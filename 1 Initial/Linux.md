@@ -133,8 +133,7 @@ sudo reboot
 13.  Edit `.zshrc`
 
 		```
-		cd ~
-		nano .zshrc
+		sudo nano ~/.zshrc
 		```
 
 	 _(Configuration uploaded [here.](https://github.com/FatherOfAlways/Setup/blob/main/3%20Config/Shell/zshrc/.zshrc%20-%20Pi))_

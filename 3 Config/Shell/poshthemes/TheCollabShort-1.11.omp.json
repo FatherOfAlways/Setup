@@ -17,7 +17,9 @@
         },
         {
           "type": "session",
-          "background": "#26BDBB",
+          "background_templates": [
+            "{{ if eq .SSHSession }} #CB3B00 {{ else }} #26BDBB {{ end }}"
+          ],
           "foreground": "#0C212F",
           "style": "diamond",
           "leading_diamond": "<transparent,background>\ue0b0</>",

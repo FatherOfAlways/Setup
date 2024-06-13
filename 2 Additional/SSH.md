@@ -21,7 +21,7 @@ Enter command and follow the instructions:
 
 
 
-## Copy SSH Keys to Server
+## Copy Client's Public SSH Key to Server
 
 ### macOS / Linux
 
@@ -147,6 +147,7 @@ Not sure which is correct:
 ### Linux
 
 * [Full guide](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
+* [5 Steps to Secure Linux (protect from hackers)](https://www.youtube.com/watch?v=ZhMw53Ud2tY)
 
 ### Windows
 

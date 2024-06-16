@@ -16,7 +16,7 @@ Instructions to help me get started setting up a fresh install.
 
 ## Maintenance
 
-- [General](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/General.md)
+- [Miscellaneous](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/Miscellaneous.md)
 - [SSH](https://github.com/FatherOfAlways/Setup/blob/main/2%20Additional/SSH.md)
 
 ## Config

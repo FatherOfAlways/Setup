@@ -50,17 +50,16 @@
           }
         },
         {
-        "type": "git",
+          "type": "git",
           "background": "#5f1e6d",
           "foreground": "#FFFFFF",
           "style": "diamond",
           "leading_diamond": "<transparent,background>\ue0b0",
           "trailing_diamond": "\ue0b0",
-          "template": " {{ .UpstreamIcon }} \uE0A0 {{ .Ref }} ",
+          "template": " \uE0A0 {{ .Ref }} ",
           "properties": {
-          "fetch_status": true,
-          "fetch_upstream_icon": true
-        }
+            "fetch_status": true
+          }
         },
         {
           "type": "root",

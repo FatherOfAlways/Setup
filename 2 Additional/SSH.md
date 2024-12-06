@@ -8,7 +8,9 @@ Already installed.
 
 `winget`:
 
-	winget install -e --id Microsoft.OpenSSH.Beta
+```
+winget install -e --id Microsoft.OpenSSH.Beta
+```
 
 You can also do it [manually](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui) (loser).
 
@@ -17,25 +19,19 @@ You can also do it [manually](https://learn.microsoft.com/en-us/windows-server/a
 
 Enter command and follow the instructions:
 
-	ssh-keygen -t rsa
+```
+ssh-keygen -t rsa
+```
 
 
 
 ## Copy Client's Public SSH Key to Server
 
-### macOS / Linux
+Copy contents from client's `~/.ssh/id_rsa.pub` to server's `~/.ssh/authorized_keys`.
 
-Execute on *client*; The following command adds client's public key to server's `.ssh/authorized_keys` file:
-
-	ssh-copy-id USERNAME@HOST
-
-### Windows
-
-*Windows server:* Manually copy contents from client's `~/.ssh/id_rsa.pub` to (Windows) server's `USERNAME/.ssh/authorized_keys`.
-
-*Windows client:* Run the following command:
-
-	type $env:USERPROFILE\.ssh\id_rsa.pub | ssh USERNAME@HOST "cat >> .ssh/authorized_keys"
+```
+sudo nano ~/.ssh/authorized_keys
+```
 
 
 
@@ -47,32 +43,53 @@ Execute on *client*; The following command adds client's public key to server's 
 
 **Config location:** `/private/etc/ssh/`
 
+```
+sudo nano /private/etc/ssh/sshd_config
+```
+
 *Required:*
 
-	PasswordAuthentication no
-	KbdInteractiveAuthentication no
-	PubkeyAuthentication yes		# May be "no" by default
-	UsePAM no
+```
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+PubkeyAuthentication yes				# May be "no" by default
+UsePAM no
+```
 
 *Optional:*
 
-	PermitRootLogin no		# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
+```
+PermitRootLogin no			# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
+```
 
 ### Linux
 
-**Config location:** `/etc/ssh/`
+**Config location:** `/etc/ssh/`:
+
+```
+sudo nano /etc/ssh/sshd_config
+```
 
 *Required:*
 
-	PasswordAuthentication no
-	ChallengeResponseAuthentication no		# Older versions only; obsolete
-	KbdInteractiveAuthentication no			# New version of "ChallengeResponseAuthentication"
-	PubkeyAuthentication yes				# May be "no" by default
-	UsePAM no
+```
+PasswordAuthentication no
+ChallengeResponseAuthentication no			# OBSOLETE; older versions only
+KbdInteractiveAuthentication no				# New version of "ChallengeResponseAuthentication"
+PubkeyAuthentication yes					# May be "no" by default
+UsePAM no
+```
 
 *Optional:*
 
-	PermitRootLogin no		# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
+```
+PermitRootLogin no		# OR "PermitRootLogin prohibit-password" to still allow PubkeyAuthentication
+```
+
+<span style="color: red">**!!! WARNING !!!**</span>
+
+<span style="color: red">**On some systems *(khm, Ubuntu Server, khm)* additional config files may be created in `/etc/ssh/sshd_config.d/` which will override `/etc/ssh/sshd_config` settings so test your config after modifications and make appropriate changes (like adding an overriding config file) if necessary. More info [here](https://askubuntu.com/questions/1516262/why-is-50-cloud-init-conf-created).**</span>
+
 
 ### Windows
 
@@ -80,17 +97,18 @@ Execute on *client*; The following command adds client's public key to server's 
 
 *Required:*
 
-Passwordless:
-
-	PasswordAuthentication no
-	KbdInteractiveAuthentication no
-	# Match Group administrators		# Comment out to enable Admin users to log in
-	# AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys		# Comment out to enable Admin users to log in
+```
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+# Match Group administrators		# Comment out to enable Admin users to log in
+# AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys		# Comment out to enable Admin users to log in
+```
 
 CLI: Allow inbound connections on port 22:
 
-	netsh advfirewall firewall add rule name=sshd dir=in action=allow protocol=TCP localport=22
-
+```
+netsh advfirewall firewall add rule name=sshd dir=in action=allow protocol=TCP localport=22
+```
 
 
 ## Restart SSH Server
@@ -99,41 +117,65 @@ CLI: Allow inbound connections on port 22:
 
 Not sure which is correct:
 
-	sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
-	sudo launchctl load /System/Library/LaunchDaemons/ssh.plist
+```
+sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
+sudo launchctl load /System/Library/LaunchDaemons/ssh.plist
+```
 
-	sudo systemsetup -setremotelogin off
-	sudo systemsetup -setremotelogin on
+```
+sudo systemsetup -setremotelogin off
+sudo systemsetup -setremotelogin on
+```
 
 ### Linux
 
-	sudo systemctl reload ssh
+```
+sudo systemctl reload ssh
+```
 
 ### Windows
 
-	Stop-Service sshd
-	Start-Service sshd
-	Get-Service sshd		# Status check
+```
+Stop-Service sshd
+Start-Service sshd
+Get-Service sshd		# Status check
+```
 
 
 
 ## Troubleshooting
 
+### General
+
 1. Check if `sshd_config` server config file is configured correctly
 
 2. Check if `~/.ssh` folder and its contents have correct permissions:
 
-	ls -la ~/.ssh
+```
+ls -la ~/.ssh
+```
 
-	-rw------- [username] [usergroup] authorized_keys
-	-rw------- [username] [usergroup] id_rsa
-	-rw-r--r-- [username] [usergroup] id_rsa.pub
-	-rw-r--r-- [username] [usergroup] known_hosts
+```
+-rw------- [username] [usergroup] authorized_keys
+-rw------- [username] [usergroup] id_rsa
+-rw-r--r-- [username] [usergroup] id_rsa.pub
+-rw-r--r-- [username] [usergroup] known_hosts
+```
 
 3. Helpful troubleshooting command (verbose logging; execute on *server*):
 
-	ssh -v localhost
-	ssh -v YOUR_LOCAL_IP
+```
+ssh -v localhost
+ssh -v YOUR_LOCAL_IP
+```
+
+### Warning: Remote Host Identification Has Changed
+
+[Remove all keys belonging to a given hostname](https://stackoverflow.com/questions/20840012/ssh-remote-host-identification-has-changed) from `known_hosts` file (replace ALL_CAPS text with appropriate values):
+
+```
+ssh-keygen -R HOST_IP
+```
 
 
 

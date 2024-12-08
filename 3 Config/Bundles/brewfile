@@ -1,0 +1,205 @@
+# ---- #
+# Taps #
+# ---- #
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "jandedobbeleer/oh-my-posh"
+tap "kamilturek/python2"
+tap "mas-cli/tap"
+
+
+# ----- #
+# Brews #
+# ----- #
+
+brew "webp"
+brew "glib"
+brew "curl"
+brew "openjdk"
+brew "duck"
+brew "leptonica"
+brew "tesseract"
+brew "ffmpeg"
+brew "fzf"
+brew "gcc"
+brew "ghostscript"
+brew "git"
+brew "go"
+brew "gobject-introspection"
+brew "imagemagick"
+brew "lsd"
+brew "lua"
+brew "mas"
+brew "mgba"
+brew "nmap"
+brew "node"
+brew "php"
+brew "pure"
+brew "python@3.8"
+brew "switchaudio-osx"
+brew "tree"
+brew "w3m"
+brew "wakeonlan"
+brew "youtube-dl"
+brew "zsh"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "jandedobbeleer/oh-my-posh/oh-my-posh"
+brew "kamilturek/python2/python@2"
+
+
+# ----- #
+# Casks #
+# ----- #
+
+cask "1password"
+cask "1password-cli"
+cask "acorn"
+# cask "airflow"
+# cask "airfoil"
+cask "alfred"
+cask "apparency"
+cask "audio-hijack"
+cask "avidemux"
+cask "backblaze"
+cask "bartender"
+cask "bettertouchtool"
+cask "bitwarden"
+# cask "busycal"
+# cask "busycontacts"
+cask "carbon-copy-cloner"
+cask "cleanmymac"
+cask "cleanshot"
+cask "daisydisk"
+cask "discord"
+cask "drivedx"
+cask "dropzone"
+cask "elgato-stream-deck"
+cask "firefox"
+cask "flirc"
+cask "flux"
+cask "font-awesome-terminal-fonts"
+cask "gemini"
+cask "google-chrome"
+cask "handbrake"
+cask "hazel"
+cask "imazing"
+cask "inkscape"
+cask "istat-menus"
+cask "iterm2"
+cask "jettison"
+cask "karabiner-elements"
+cask "keyboard-maestro"
+cask "keyboardcleantool"
+cask "little-snitch"
+cask "loopback"
+cask "lyricsx"
+cask "maestral"
+cask "mailtrackerblocker"
+cask "meta"
+cask "mgba"
+cask "microsoft-remote-desktop"
+cask "minecraft"
+cask "mission-control-plus"
+cask "moneywiz"
+cask "mountain-duck"
+cask "mpv"
+cask "ogdesign-eagle"
+cask "paintbrush"
+cask "paragon-ntfs"
+cask "pdf-expert"
+cask "pixelsnap"
+# cask "qbittorrent"
+cask "qlvideo"
+cask "resilio-sync"
+cask "retrobatch"
+cask "screens"
+cask "scroll-reverser"
+cask "shapes"
+cask "sonic-visualiser"
+cask "soulseek"
+cask "soulver"
+cask "soundsource"
+# cask "steam"
+cask "sublime-text"
+# cask "teamviewer"
+cask "the-unarchiver"
+cask "topnotch"
+cask "transmission"
+cask "transmit"
+cask "unexpectedly"
+cask "visual-studio-code"
+cask "visualboyadvance-m"
+cask "whatsapp"
+cask "xld"
+
+
+# ------------- #
+# Mac App Store #
+# ------------- #
+
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Bitwarden", id: 1352778147
+mas "Button Creator", id: 1559303865
+mas "Calcbot", id: 931657367
+mas "Cloud Outliner", id: 1024917449
+mas "ColorSlurp", id: 1287239339
+mas "Deliveries", id: 290986013
+mas "Disk Speed Test", id: 425264550
+mas "Divvy", id: 413857545
+mas "Dropover", id: 1355679052
+mas "Dropshelf", id: 540404405
+mas "Due", id: 524373870
+# mas "Hush", id: 1544743900
+mas "Image2icon", id: 992115977
+mas "Ionica", id: 1470230251
+mas "MarkEdit", id: 1669953820
+mas "MediaInfo", id: 510620098
+mas "Messenger", id: 1480068668
+mas "Metadatics", id: 554883654
+mas "MoneyWiz", id: 1511185140
+mas "Morpho", id: 1494942612
+# mas "MusicHarbor", id: 1440405750
+mas "Name Mangler", id: 603637384
+mas "Paste", id: 967805235
+mas "Peek", id: 1554235898
+mas "Pi Stats", id: 1514075262
+mas "Pixea", id: 1507782672
+mas "Pixelmator Pro", id: 1289583905
+mas "Reeder", id: 1529448980
+mas "Simplenote", id: 692867256
+mas "Spark", id: 1176895641
+# mas "Speedtest", id: 1153157709
+mas "Subtrack", id: 1519946553
+mas "Tot", id: 1491071483
+mas "Xcode", id: 497799835
+
+
+# -------- #
+# No Casks #
+# -------- #
+
+# 2Do
+# Air Video Server HD
+# Audient iD
+# deemix-pyweb
+# Flash Player (Standalone)
+# Freecell
+# SmoothGesturesPlusExtras
+# VLC 2
+
+
+# ------------- #
+# No Cask (CRX) #
+# ------------- #
+
+# Adobe Lightroom Classic
+# BusyCal
+# Microsoft Office

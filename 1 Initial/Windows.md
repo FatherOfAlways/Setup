@@ -52,7 +52,7 @@
 4. Install `winget` packages from [**export**](https://www.dropbox.com/sh/b00ss7490cw85el/AADWWWtufV2_Gd9xLIOrN9OYa?dl=0):
 
 	```
-	winget import -i "\PATH\TO\DOWNLOADED\EXPORT.json"
+	winget import -i "\PATH\TO\DOWNLOADED\EXPORT.json" --accept-package-agreements --accept-source-agreements
 	```
 
 5. Install `choco` packages from [**export**](https://www.dropbox.com/sh/nnnxiqfkyn2k1ye/AAAkW8zn-hPDizY1nedZAWQra?dl=0):
@@ -85,7 +85,7 @@
 	3. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Language bar > Hidden - _Must be selected_
 	4. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Advanced Key Settings - _Disable the hotkeys_
 
-5. Disable [**Clipboard History**](https://www.elevenforum.com/t/enable-or-disable-clipboard-history-in-windows-11.973/) either by running [this reg file](https://www.elevenforum.com/) or doing it manually:
+5. Disable [**Clipboard History**](https://www.elevenforum.com/t/enable-or-disable-clipboard-history-in-windows-11.973/):
 
 	1. Win+R > `gpedit.msc` (Local Group Policy Editor)
 	2. Navigate to `Computer Configuration\Administrative Templates\System\OS Policies`
@@ -128,6 +128,8 @@
 		```
 		bcdedit /set {IDENTIFIER} description "NEW_NAME"
 		```
+
+3. Uninstall [**Feedback Hub**](https://superuser.com/questions/1221259/how-do-i-disable-windows-f).
 
 
 ## Shell
@@ -208,12 +210,16 @@
 
 **Set Windows PowerShell Execution Policy**
 
+You need to change *Computer Configuration* and *User configuration* policies:
+
 1. Open _Group Policy Editor_
 2. Navigate to _Administrative Templates > Windows Components > Windows PowerShell > Turn on Script Execution_
 3. Set it to _Enabled_ and the _Execution Policy_ to _Allow local scripts and remote signed scripts_.
 
 
 **Set PowerShell 7 Execution Policy**
+
+You need to change *Computer Configuration* and *User configuration* policies:
 
 0. Check for PowerShell 7 location (in this case _C:\Program Files\PowerShell\7_):
 

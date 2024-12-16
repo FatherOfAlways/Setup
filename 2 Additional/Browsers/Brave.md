@@ -5,7 +5,6 @@ URL: [`brave://flags/`](brave://flags/)
 **Cross-platform:**
 
 * [`brave://flags/#native-brave-wallet`](brave://flags/#native-brave-wallet)
-* [`brave://flags/#brave-vpn`](brave://flags/#brave-vpn)
 
 **macOS:**
 

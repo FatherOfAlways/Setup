@@ -8,9 +8,6 @@ brew install ffmpeg
 
 ## Audiobooks (.m4b)
 
-- .m4b is apparently just a renamed .m4a
-- .m4b/.m4a are just wrappers for .aac (can just rename, no need for conversion)
-
 CLI script for converting everything inside a particular folder to .mp3 (you first have to navigate to that folder in CLI):
 
 ```

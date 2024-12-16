@@ -26,7 +26,7 @@
           "foreground": "#85ECD1",
           "background": "#0C2B45",
           "template": " {{ if .WSL }}WSL @ {{ end }}{{.Icon}}",
-		  "style": "plain"
+		  "style": "diamond"
         },
         {
           "type": "session",

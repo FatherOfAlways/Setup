@@ -1,0 +1,2 @@
+- [God Tier Screen Calibration Test Site](https://www.wide-gamut.com/test)
+- [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)

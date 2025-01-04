@@ -37,6 +37,8 @@ mount | grep DEVICE_NAME
 
 ## Initialize Disk
 
+### Partition
+
 1. Check if any volumes are mounted (if not, skip to step 3):
 
 	```
@@ -81,19 +83,35 @@ mount | grep DEVICE_NAME
 	w
 	```
 
-8. Install `exFAT` packages ([`exfat-utils` and `exfat-fuse` are deprecated](https://askubuntu.com/questions/1403900/how-to-install-exfat-utils-and-hddtemp-on-ubuntu-22-04)):
+### File System
+
+0. ***OPTIONAL***: Install `exFAT` packages ([`exfat-utils` and `exfat-fuse` are deprecated](https://askubuntu.com/questions/1403900/how-to-install-exfat-utils-and-hddtemp-on-ubuntu-22-04)):
 
 	```
 	sudo apt install exfatprogs
 	```
 
-9. Format the new partition:
+1. Format the new partition:
+
+	* `Ext4`:
+
+		```
+		sudo mkfs.ext4 /dev/VOLUME_NAME
+		```
+
+	* `exFAT`:
+
+		```
+		sudo mkfs.exfat -n "USER_LABEL" /dev/VOLUME_NAME
+		```
+
+2. ***OPTIONAL***: If you selected the `ext4` file system, you can add a label to it via the following command:
 
 	```
-	sudo mkfs.exfat -n "USER_LABEL" /dev/VOLUME_NAME
+	sudo e2label /dev/VOLUME_NAME USER_LABEL
 	```
 
-10. Mount the new volume:
+3. Mount the new volume:
 
 	```
 	sudo mkdir /mnt/USER_LABEL
@@ -130,11 +148,19 @@ mount | grep DEVICE_NAME
 
 5. Add the following line at the end:
 
-	```
-	UUID=67CF-3C04 /mnt/titan exfat defaults,umask=0000,uid=1000,gid=1000 0 1
-	```
+	* `Ext4`:
 
-	Added `umask=0000,uid=1000,gid=1000` because exFAT drives do not support file ownership (helpful comments [here](https://superuser.com/questions/1720216/chown-operation-not-permitted-even-as-root-user) and [here](https://askubuntu.com/questions/113733/how-to-mount-a-ntfs-partition-in-etc-fstab)).
+		```
+		UUID=VOLUME_UUID /mnt/USER_FOLDER ext4 defaults 0 0
+		```
+
+	* `exFAT`:
+
+		```
+		UUID=VOLUME_UUID /mnt/USER_FOLDER exfat defaults,umask=0000,uid=1000,gid=1000 0 1
+		```
+
+		Added `umask=0000,uid=1000,gid=1000` because exFAT drives do not support file ownership (helpful comments [here](https://superuser.com/questions/1720216/chown-operation-not-permitted-even-as-root-user) and [here](https://askubuntu.com/questions/113733/how-to-mount-a-ntfs-partition-in-etc-fstab)).
 
 6. Basic test (mounts everything in `fstab` that isn't already mounted):
 

@@ -88,7 +88,7 @@ PermitRootLogin no		# OR "PermitRootLogin prohibit-password" to still allow Pubk
 
 <span style="color: red">**!!! WARNING !!!**</span>
 
-<span style="color: red">**On some systems *(khm, Ubuntu Server, khm)* additional config files may be created in `/etc/ssh/sshd_config.d/` which will override `/etc/ssh/sshd_config` settings so test your config after modifications and make appropriate changes (like adding an overriding config file) if necessary. More info [here](https://askubuntu.com/questions/1516262/why-is-50-cloud-init-conf-created).**</span>
+<span style="color: red">**On some systems additional config files may be created by default in `/etc/ssh/sshd_config.d/` which will override `/etc/ssh/sshd_config` settings so test your config after modifications and make appropriate changes (like adding an overriding config file) if necessary. More info [here](https://askubuntu.com/questions/1516262/why-is-50-cloud-init-conf-created).**</span>
 
 
 ### Windows

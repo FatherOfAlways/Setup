@@ -35,8 +35,16 @@ Change download folder **Ownership**:
 sudo chown -R qbittorrent-nox:qbittorrent-nox /PATH/TO/FOLDER
 ```
 
-Restart qBittorrent service:
+### qBittorrent service
 
-```
-sudo systemctl restart qbittorrent-nox.service
-```
+- Restart:
+
+	```
+	sudo systemctl restart qbittorrent-nox.service
+	```
+
+- Stop:
+
+	```
+	sudo systemctl stop qbittorrent-nox.service
+	```

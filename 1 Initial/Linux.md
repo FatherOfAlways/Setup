@@ -134,3 +134,24 @@
 		```
 
 	 3. Close the current terminal session and start a new one.
+
+
+## Tweaks
+
+Add User to the sudo Group:
+
+```
+usermod -aG sudo USERNAME
+```
+
+To ensure that the user has sudo privileges, run the `whoami` command:
+
+```
+sudo whoami
+```
+
+[Add User to the sudoers File](https://linuxize.com/post/how-to-add-user-to-sudoers-in-ubuntu/) (creates a new file with the authorization rules in the `/etc/sudoers.d` folder):
+
+```
+echo "USERNAME  ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/USERNAME
+```

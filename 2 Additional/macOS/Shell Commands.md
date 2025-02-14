@@ -95,6 +95,22 @@ ln -s /path/to/original /path/to/symlink
 
 
 
+## App Notarization Workaround
+
+You have to [remove the file from quarantine](https://github.com/jeffvli/feishin/issues/104#issuecomment-1553914730):
+
+```
+xattr -r -d com.apple.quarantine /Applications/Feishin.app
+```
+
+If you have a conflicting xattr binary:
+
+```
+/usr/bin/xattr -r -d com.apple.quarantine /Applications/Feishin.app
+```
+
+
+
 ## Other
 
 **Convert Audio File to iPhone Ringtone:**

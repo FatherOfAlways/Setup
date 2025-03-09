@@ -6,7 +6,7 @@ Instructions to help me get started setting up a fresh install.
 
 ### Operating Systems
 
-- [macOS](https://github.com/FatherOfAlways/Setup/blob/main/1%20Initial/macOS.md)
+- [macOS](1%20Initial/macOS.md)
 - [Windows](https://github.com/FatherOfAlways/Setup/blob/main/1%20Initial/Windows.md)
 - [Linux](https://github.com/FatherOfAlways/Setup/blob/main/1%20Initial/Linux.md)
 

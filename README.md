@@ -10,18 +10,22 @@ Instructions to help me get started setting up a fresh install.
 
 ## Additional
 
+### OS
+
 - [macOS](2%20Additional/macOS)
 - [Windows](2%20Additional/Windows)
 - [Linux](2%20Additional/Linux)
 - [Raspberry Pi](2%20Additional/Raspberry%20Pi)
 
+### Various
+
+- [Miscellaneous](2%20Additional/Miscellaneous.md)
+- [SSH](2%20Additional/SSH.md)
 
 
+## Config
 
-### Shell
-
-- [iTerm](3%20Config/Shell/iTerm)
-- [posthemes](3%20Config/Shell/poshthemes)
-- [PowerShell](3%20Config/Shell/PowerShell)
-- [ssh](3%20Config/Shell/ssh)
-- [zshrc](3%20Config/Shell/zshrc)
+- [Brave](3%20Config/Brave)
+- [Bundles](3%20Config/Bundles)
+- [Shell](3%20Config/Shell)
+- [Other](3%20Config/Other)

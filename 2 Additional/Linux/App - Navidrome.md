@@ -21,7 +21,7 @@
 	sudo install -d -o navidrome -g navidrome /var/lib/navidrome
 	```
 
-4. Get Navidrome - go to the [releases page](https://github.com/navidrome/navidrome/releases) and replace the URL:
+4. Get Navidrome - go to the [releases page](https://github.com/navidrome/navidrome/releases) and replace the URL below:
 
 	```
 	wget https://github.com/navidrome/navidrome/releases/download/v0.XX.X/navidrome_0.XX.X_linux_amd64.tar.gz -O Navidrome.tar.gz
@@ -131,6 +131,37 @@
 		```
 
 8. Open the app: http://HOST:4533
+
+
+
+## Updating
+
+1. Get the latest executable on the [releases page](https://github.com/navidrome/navidrome/releases) and replace the URL below:
+
+	```
+	wget https://github.com/navidrome/navidrome/releases/download/v0.XX.X/navidrome_0.XX.X_linux_amd64.tar.gz -O Navidrome.tar.gz
+	```
+
+2. Stop Navidrome:
+
+	```
+	sudo systemctl stop navidrome.service
+	```
+
+3. Extract the archive to the app's location and fix the permissions/ownership:
+
+	```
+	sudo tar -xvzf Navidrome.tar.gz -C /opt/navidrome/
+	sudo chmod +x /opt/navidrome/navidrome
+	sudo chown -R navidrome:navidrome /opt/navidrome
+	```
+
+4. Start Navidrome:
+
+	```
+	sudo systemctl start navidrome.service
+	```
+
 
 
 ## Resources

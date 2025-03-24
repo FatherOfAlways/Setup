@@ -1,22 +1,36 @@
-## Resources
+## Updating
 
-**Installation:**
+1. Get the latest executable on the [releases page](https://github.com/userdocs/qbittorrent-nox-static/releases) and replace the URL below:
 
-- [How to Install qBittorrent on Ubuntu 24.04](https://linuxcapable.com/how-to-install-qbittorrent-on-ubuntu-linux/)
-- [How to Install qBittorrent-NoX](https://saputra.org/threads/how-to-install-qbittorrent-nox-a-headless-and-web-ui-torrent-client.1099/) (useful troubleshooting in comments)
+```
+wget "https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-xxxx/x86_64-qbittorrent-nox" -O qbittorrent-nox
+```
 
-**Upgrading:**
+2. Stop `qbittorrent-nox`:
 
-- [Upgrade instructions](https://forum.qbittorrent.org/viewtopic.php?t=10368)
-- [qbittorrent-nox-static Repo](https://github.com/userdocs/qbittorrent-nox-static) (latest versions)
+```
+sudo systemctl stop qbittorrent-nox.service
+```
 
+3. Replace the executable in `/usr/bin/` with the one downloaded above - preferably via [`mc`](https://midnight-commander.org/):
 
-**Troubleshooting:**
+```
+mc
+```
 
-- [Explicitly create user with home dir](https://askubuntu.com/questions/374870/home-directory-not-being-created)
-- [Removing user accounts](https://askubuntu.com/questions/1013601/removing-user-accounts)
-- ["Invalid Username or Password"](https://www.reddit.com/r/docker/comments/1812wyf/has_anyone_else_had_the_qbittorrent_invalid/)
-- [Where are .torrent files stored?](https://www.reddit.com/r/qBittorrent/comments/enj9w3/where_are_torrent_files_stored/)
+4. Fix the permissions/ownership:
+
+```
+sudo chown -R qbittorrent-nox:qbittorrent-nox /usr/bin/qbittorrent-nox
+sudo chmod -R 775 /usr/bin/qbittorrent-nox
+```
+
+5. Start `qbittorrent-nox`:
+
+```
+sudo systemctl start qbittorrent-nox.service
+```
+
 
 
 ## Troubleshooting
@@ -48,3 +62,26 @@ sudo chown -R qbittorrent-nox:qbittorrent-nox /PATH/TO/FOLDER
 	```
 	sudo systemctl stop qbittorrent-nox.service
 	```
+
+
+
+## Resources
+
+**Installation:**
+
+- [How to Install qBittorrent on Ubuntu 24.04](https://linuxcapable.com/how-to-install-qbittorrent-on-ubuntu-linux/)
+- [How to Install qBittorrent-NoX](https://saputra.org/threads/how-to-install-qbittorrent-nox-a-headless-and-web-ui-torrent-client.1099/) (useful troubleshooting in comments)
+
+**Updating:**
+
+- [Upgrade instructions](https://forum.qbittorrent.org/viewtopic.php?t=10368)
+- [qbittorrent-nox-static Repo](https://github.com/userdocs/qbittorrent-nox-static) (latest versions)
+
+
+**Troubleshooting:**
+
+- [Explicitly create user with home dir](https://askubuntu.com/questions/374870/home-directory-not-being-created)
+- [Removing user accounts](https://askubuntu.com/questions/1013601/removing-user-accounts)
+- ["Invalid Username or Password"](https://www.reddit.com/r/docker/comments/1812wyf/has_anyone_else_had_the_qbittorrent_invalid/)
+- [Where are .torrent files stored?](https://www.reddit.com/r/qBittorrent/comments/enj9w3/where_are_torrent_files_stored/)
+

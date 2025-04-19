@@ -121,6 +121,11 @@
 	- Win+R > `ms-settings:multitasking` > Snap windows > Show snap layouts when I hover over a window's maximise button
 	- Win+R > `ms-settings:multitasking` > Snap windows > Show snap layouts when I drag a window to the top of my screen
 
+- Disable **Start Menu/Windows Explorer** recommendations: 
+
+	- Win+R > `ms-settings:personalization-start` > Show recommended files in Start, recent files in File Explorer, and items in Jump Lists
+	- Win+R > `ms-settings:personalization-start` > Show recommendations for tips, shortcuts, new apps, and more
+
 #### Other
 
 - Rename Computer:

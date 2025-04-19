@@ -52,7 +52,7 @@
 4. Install `winget` packages from [**export**](https://www.dropbox.com/sh/b00ss7490cw85el/AADWWWtufV2_Gd9xLIOrN9OYa?dl=0):
 
 	```
-	winget import -i "\PATH\TO\DOWNLOADED\EXPORT.json" --accept-package-agreements --accept-source-agreements
+	winget import -i "\PATH\TO\DOWNLOADED\EXPORT.json"
 	```
 
 5. Install `choco` packages from [**export**](https://www.dropbox.com/sh/nnnxiqfkyn2k1ye/AAAkW8zn-hPDizY1nedZAWQra?dl=0):
@@ -68,24 +68,28 @@
 
 ### Required
 
-1. Set up [**Resilio Sync**](https://www.resilio.com/):
+#### Apps
+
+- Set up [**Resilio Sync**](https://www.resilio.com/):
 
 	1. [**Link new device**](https://help.resilio.com/hc/en-us/articles/205457815-Sync-Private-Identity-Linking-My-Devices) to Identity (as **Disconnected!**).
 	2. Set up sync folders.
 	3. Disable [**"Store deleted files in folder archive"**](https://help.resilio.com/hc/en-us/articles/205458125-Folder-Preferences).
 
-2. Import & apply [**WinAero Tweaker**](https://winaero.com/winaero-tweaker/) config & **restart computer**
+- Import & apply [**WinAero Tweaker**](https://winaero.com/winaero-tweaker/) config & **restart computer**
 
-3. Restore [**PowerToys**](https://github.com/microsoft/PowerToys) config.
+- Restore [**PowerToys**](https://github.com/microsoft/PowerToys) config.
 
-4. Configure [**Language Bar Stuff**](https://beebom.com/how-remove-language-switcher-windows-11-taskbar/), disable [**Keyboard Layout Hotkey**](https://superuser.com/a/1428326):
+#### Settings ([URI Scheme](https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings-app))
+
+- Configure [**Language Bar Stuff**](https://beebom.com/how-remove-language-switcher-windows-11-taskbar/), disable [**Keyboard Layout Hotkey**](https://superuser.com/a/1428326):
 
 	1. Win+R > `ms-settings:keyboard` - _Make sure your primary language is the only one available, remove others_
 	2. Win+R > `ms-settings:typing` > Advanced keyboard settings > Use the desktop language bar when it is available - _Must be checked_
 	3. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Language bar > Hidden - _Must be selected_
 	4. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Advanced Key Settings - _Disable the hotkeys_
 
-5. Disable [**Clipboard History**](https://www.elevenforum.com/t/enable-or-disable-clipboard-history-in-windows-11.973/):
+- Disable [**Clipboard History**](https://www.elevenforum.com/t/enable-or-disable-clipboard-history-in-windows-11.973/) either by running [this reg file](https://www.elevenforum.com/) or doing it manually:
 
 	1. Win+R > `gpedit.msc` (Local Group Policy Editor)
 	2. Navigate to `Computer Configuration\Administrative Templates\System\OS Policies`
@@ -93,13 +97,31 @@
 	4. Select *Not Configured* and click *OK*
 	5. Restart the computer to apply
 
-6. Disable Caps Lock through one of the options below:
+- Disable Windows [**Dynamic Lighting**](https://support.microsoft.com/en-us/windows/control-dynamic-lighting-devices-in-windows-8e8f22e3-e820-476c-8f9d-9ffc7b6ffcd2):
+
+	- Win+R > `ms-settings:personalization-lighting` > Use Dynamic Lighting on my devices > Off
+
+- Disable some [**Window Snapping**](https://support.microsoft.com/en-us/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241) preferences: 
+
+	- Win+R > `ms-settings:multitasking` > Snap windows > When I snap a window, suggest what I can snap next to it
+	- Win+R > `ms-settings:multitasking` > Snap windows > Show snap layouts when I hover over a window's maximise button
+	- Win+R > `ms-settings:multitasking` > Snap windows > Show snap layouts when I drag a window to the top of my screen
+
+#### Other
+
+- Rename Computer:
+
+	```
+	Rename-Computer -NewName "NEW_COMPUTER_NAME" -Restart
+	```
+
+- Disable **Caps Lock** through one of the options below:
 
 	* [PowerToys](https://www.ricksdailytips.com/disable-caps-lock-key/) - *Preferred option*
 	* [NumLocker](https://www.makeuseof.com/windows-10-11-disable-caps-lock/#how-to-disable-caps-lock-with-numlocker)
 	* [Regedit](https://www.makeuseof.com/windows-10-11-disable-caps-lock/#how-to-disable-caps-lock-by-editing-the-registry)
 
-7. Adjust your screen's dynamic range (nVidia only):
+- Adjust your screen's dynamic range (nVidia only):
 
 	1. Open *nVidia Control Panel*
 	2. Navigate to *Display > Change resolution > 3. Apply the following settings*
@@ -128,8 +150,6 @@
 		```
 		bcdedit /set {IDENTIFIER} description "NEW_NAME"
 		```
-
-3. Uninstall [**Feedback Hub**](https://superuser.com/questions/1221259/how-do-i-disable-windows-f).
 
 
 ## Shell
@@ -210,16 +230,12 @@
 
 **Set Windows PowerShell Execution Policy**
 
-You need to change *Computer Configuration* and *User configuration* policies:
-
 1. Open _Group Policy Editor_
 2. Navigate to _Administrative Templates > Windows Components > Windows PowerShell > Turn on Script Execution_
 3. Set it to _Enabled_ and the _Execution Policy_ to _Allow local scripts and remote signed scripts_.
 
 
 **Set PowerShell 7 Execution Policy**
-
-You need to change *Computer Configuration* and *User configuration* policies:
 
 0. Check for PowerShell 7 location (in this case _C:\Program Files\PowerShell\7_):
 

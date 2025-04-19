@@ -80,6 +80,20 @@
 
 - Restore [**PowerToys**](https://github.com/microsoft/PowerToys) config.
 
+- Configure [**`gsudo`**](https://github.com/gerardog/gsudo):
+
+	- Ask for UAC prompt only once per session:
+
+		```
+		gsudo config CacheMode Auto
+		```
+
+	- ['sudo' alias should invoke `gsudo`](https://github.com/gerardog/gsudo/issues/387):
+
+		```
+		gsudo config PathPrecedence True
+		```
+
 #### Settings ([URI Scheme](https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings-app))
 
 - Configure [**Language Bar Stuff**](https://beebom.com/how-remove-language-switcher-windows-11-taskbar/), disable [**Keyboard Layout Hotkey**](https://superuser.com/a/1428326):
@@ -292,3 +306,5 @@ Get-ExecutionPolicy -List
 	```
 	git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 	```
+
+4. *Optional reading: [Resolving SSH key conflicts](https://developer.1password.com/docs/ssh/agent/advanced/#match-key-with-host)* 

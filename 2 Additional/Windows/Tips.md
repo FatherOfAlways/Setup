@@ -1,4 +1,4 @@
-## How to Access the Windows Startup Folder
+## Startup Folder
 
 All Users:
 
@@ -18,7 +18,7 @@ Shell:startup
 
 
 
-## Windows Native Apps
+## Native Apps
 
 [Location](https://www.windows10forums.com/threads/setting-native-windows-10-apps-to-open-on-startup.16709/):
 

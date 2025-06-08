@@ -15,6 +15,7 @@ URL: [`chrome://flags/`](chrome://flags/)
 * `#local-network-access-check` - Enabled (Blocking) - security stuff
 * `#enable-canvas-noise` - Enabled - In all browsing modes - security stuff
 * `#bind-cookies-to-scheme` - Enabled - security stuff
+* `#enable-parallel-downloading` - Enabled - speeds up downloads
 
 **Windows:**
 

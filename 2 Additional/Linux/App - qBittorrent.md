@@ -65,6 +65,12 @@ sudo chown -R qbittorrent-nox:qbittorrent-nox /PATH/TO/FOLDER
 
 
 
+## Dark Mode
+
+The built-in dark mode broke on me for some reason so here's an alternative: [Dracula Theme](https://draculatheme.com/qbittorrent) / [GitHub](https://github.com/dracula/qbittorrent/blob/master/INSTALL.md)
+
+
+
 ## Resources
 
 **Installation:**

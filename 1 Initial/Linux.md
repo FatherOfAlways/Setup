@@ -75,9 +75,9 @@
 
 11.  Install [`Oh My Zsh`](https://ohmyz.sh/):
 
-	```
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-	```
+		```
+		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+		```
 
 12.  Install the following `Oh My Zsh` plugins:
 
@@ -107,9 +107,9 @@
 
 13.  Edit `.zshrc`
 
-	```
-	sudo nano ~/.zshrc
-	```
+		```
+		sudo nano ~/.zshrc
+		```
 
 	 _(Configuration uploaded [here.](https://github.com/FatherOfAlways/Setup/blob/main/3%20Config/Shell/zshrc/.zshrc%20-%20Pi))_
 

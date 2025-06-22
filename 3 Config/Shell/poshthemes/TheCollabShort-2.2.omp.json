@@ -26,7 +26,7 @@
           "foreground": "#85ECD1",
           "background": "#0C2B45",
           "template": " {{ if .WSL }}WSL @ {{ end }}{{.Icon}}",
-		  "style": "plain"
+		      "style": "diamond"
         },
         {
           "type": "session",
@@ -40,7 +40,7 @@
           "style": "diamond"
         },
         {
-		  "type": "path",
+		      "type": "path",
           "properties": {
             "cache_duration": "none",
             "folder_icon": "\uf141",
@@ -56,7 +56,7 @@
           "style": "powerline"
         },
         {
-		  "type": "git",
+		      "type": "git",
           "properties": {
             "cache_duration": "none",
             "fetch_status": true
@@ -68,7 +68,7 @@
           "style": "diamond"
         },
         {
-		  "type": "root",
+	        "type": "root",
           "properties": {
             "cache_duration": "none"
           },
@@ -87,7 +87,7 @@
       "alignment": "right",
       "segments": [
         {
-		  "type": "status",
+		      "type": "status",
           "properties": {
             "always_enabled": true,
             "cache_duration": "none"
@@ -101,7 +101,7 @@
           ]
         },
         {
-		  "type": "executiontime",
+          "type": "executiontime",
           "properties": {
             "cache_duration": "none",
             "style": "round",
@@ -120,7 +120,7 @@
       "alignment": "left",
       "segments": [
         {
-		  "type": "text",
+		      "type": "text",
           "properties": {
             "cache_duration": "none"
           },

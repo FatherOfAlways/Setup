@@ -1,4 +1,4 @@
-oh-my-posh.exe init pwsh --config "C:\Anchor\poshthemes\TheCollabShort-1.8.omp.json" | Invoke-Expression
+oh-my-posh.exe init pwsh --config "C:\Anchor\poshthemes\TheCollabShort-2.2.omp.json" | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
 Import-Module -Name PSReadLine

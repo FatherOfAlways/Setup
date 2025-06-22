@@ -11,7 +11,7 @@ export ZSH="/Users/tomazfidel/.oh-my-zsh"
 # Enable oh-my-posh
 # As the standard terminal has issues displaying the ANSI characters correctly, you might want to skip loading just for that terminal
 if [ $TERM_PROGRAM != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config /Users/tomazfidel/.poshthemes/TheCollabShort-1.6.omp.json)"
+  eval "$(oh-my-posh init zsh --config /Users/tomazfidel/.poshthemes/TheCollabShort-2.2.omp.json)"
 fi
 
 # Zsh automatically detects directories in $fpath that might have insecure permissions.

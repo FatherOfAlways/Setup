@@ -16,6 +16,12 @@ sudo chmod 2775 /var/opt/minecraft/crafty/crafty-4/servers/SERVER_ID -R
 
 
 
+## Usage
+
+IP: `http://[HOST_ADDRESS]:8443`
+
+
+
 ## Resources
 
 - [Home](https://craftycontrol.com/#home)

@@ -20,6 +20,12 @@ sudo systemctl enable homebridge
 
 
 
+## Usage
+
+IP: `http://[HOST_ADDRESS]:8581`
+
+
+
 ## Resources
 
 - [Installation](https://github.com/homebridge/homebridge/wiki/Install-Homebridge-on-Debian-or-Ubuntu-Linux)

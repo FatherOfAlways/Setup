@@ -24,6 +24,12 @@ networks: {}
 
 
 
+## Usage
+
+IP: `http://[HOST_ADDRESS]:9180`
+
+
+
 ## Resources
 
 - [Documentation](https://github.com/jeffvli/feishin)

@@ -130,7 +130,11 @@
 		sudo systemctl enable navidrome.service
 		```
 
-8. Open the app: http://HOST:4533
+
+
+## Usage
+
+IP: `http://[HOST_ADDRESS]:4533`
 
 
 

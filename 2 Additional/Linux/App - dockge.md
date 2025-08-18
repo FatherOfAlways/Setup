@@ -26,6 +26,12 @@ services:
 
 
 
+## Usage
+
+IP: `http://[HOST_ADDRESS]:5001`
+
+
+
 ## Notes
 
 If you have existing containers, either change *dockge*'s default Stacks Directory or move them to the default Stacks Directory (`/opt/stacks`). If you don't do either, *dockge* will not be able to manage them.

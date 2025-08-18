@@ -1,5 +1,23 @@
 ## Common Commands
 
+### Video
+
+- Specify custom location:
+
+	```
+	yt-dlp -o '/path/to/file//%(title)s.%(ext)s' 'https://LINK_TO_VIDEO'
+	```
+
+- Specify video quality:
+
+	```
+	yt-dlp -f 'bestvideo[height=720]+bestaudio/best' 'https://LINK_TO_VIDEO'
+	```
+
+
+
+### Audio
+
 - Extract Raw Audio from .m4a
 
 	```

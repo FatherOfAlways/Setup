@@ -75,6 +75,12 @@ sudo docker container stop nginxproxymanager-db-1
 
 
 
+## Usage
+
+IP: `http://[HOST_ADDRESS]:81`
+
+
+
 ## Resources
 
 *Installation:*

@@ -64,8 +64,7 @@ pihole -g
 
 *Pi-hole Installation:*
 
-- [Installation Guide (2023)](https://www.youtube.com/watch?v=xtMFcVx3cHU)
-- [LTT Guide](https://linustechtips.com/main/topic/1094810-pi-hole-setup-tutorial/)
+- [The ULTIMATE Pi-hole Setup? (Pi-hole, Unbound, Nebula Sync, Keepalived)](https://www.youtube.com/watch?v=6sznCZ7ttbI)
 - [Required Ports](https://docs.pi-hole.net/main/prerequesites/)
 
 *Log2Ram*
@@ -78,6 +77,5 @@ pihole -g
 
 *Remotes:*
 
-- Chrome: [Remote Switch for Pi-Hole](https://chrome.google.com/webstore/detail/remote-switch-for-pi-hole/nkkklnmkpmobgcbkipccdjahpcgbhnki/related?hl=en)
-- iOS [PiHole Admin iOS Shortcut](https://www.reddit.com/r/pihole/comments/9koft9/pihole_admin_ios_shortcut/)
-- macOS: [Pi Stats](https://github.com/Bunn/PiStats)
+- macOS: [PiBar](https://github.com/amiantos/pibar) / [Pi Stats](https://github.com/Bunn/PiStats)
+- iOS: [Pi-hole Remote](https://rocketscience-it.nl/)

@@ -13,25 +13,7 @@
 	curl -sSL https://get.docker.com | sh
 	```
 
-3. Add your user *(current user)* to the `docker` group:
-
-	```
-	sudo usermod -aG docker $USER
-	```
-
-4. Reboot:
-
-	```
-	sudo reboot
-	```
-
-5. Check if your user was added to the `docker` group:
-
-	```
-	groups
-	```
-
-6. Verify:
+3. Test:
 
 	```
 	sudo docker run hello-world

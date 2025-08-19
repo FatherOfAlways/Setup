@@ -22,19 +22,6 @@ IP: `http://[HOST_ADDRESS]:3001`
 
 
 
-## Updating
-
-Navigate to Uptima Kuma directory:
-
-```
-cd ~/uptime-kuma
-git pull
-npm run setup
-pm2 restart uptime-kuma
-```
-
-
-
 ## Resources
 
 - [Uptime Kuma GitHub](https://github.com/louislam/uptime-kuma)

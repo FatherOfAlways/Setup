@@ -200,6 +200,12 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "DuongDieuPhap.ImageGlass"
+				},
+				{
+					"PackageIdentifier" : "OO-Software.ShutUp10"
 				}
 			],
 			"SourceDetails" : 

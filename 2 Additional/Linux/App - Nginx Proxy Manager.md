@@ -7,7 +7,7 @@ Create a `docker-compose.yml` file (in `/opt/nginxproxymanager`); replace `DATAB
 * File creation:
 
 	```
-	sudo nano /opt/nginxproxymanager/docker-compose.yml
+	sudo nano /opt/stacks/nginxproxymanager/docker-compose.yml
 	```
 
 * Contents:
@@ -48,13 +48,13 @@ Create a `docker-compose.yml` file (in `/opt/nginxproxymanager`); replace `DATAB
 
 ## Docker File Management
 
-*Prerequisite:* Navigate to `/opt/nginxproxymanager` (if not already there)
+*Prerequisite:* Navigate to `/opt/nginxproxymanager` (if not already there):
 
 ```
-cd /opt/nginxproxymanager/
+cd /opt/stacks/nginxproxymanager/
 ```
 
-Runn the app:
+Run the app:
 
 ```
 sudo docker compose up -d

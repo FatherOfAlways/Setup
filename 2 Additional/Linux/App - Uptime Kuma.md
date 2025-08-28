@@ -2,7 +2,7 @@
 
 Docker Compose:
 
-```
+```yaml
 services:
   uptime-kuma:
     image: louislam/uptime-kuma:1

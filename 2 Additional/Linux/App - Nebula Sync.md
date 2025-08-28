@@ -2,7 +2,7 @@
 
 Docker Compose:
 
-```
+```yaml
 services:
   nebula-sync:
     image: ghcr.io/lovelaze/nebula-sync:latest

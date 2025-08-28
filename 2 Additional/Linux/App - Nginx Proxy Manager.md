@@ -12,7 +12,7 @@ Create a `docker-compose.yml` file (in `/opt/nginxproxymanager`); replace `DATAB
 
 * Contents:
 
-	```
+	```yaml
 	services:
 	  app:
 	    image: 'jc21/nginx-proxy-manager:latest'

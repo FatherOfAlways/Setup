@@ -2,7 +2,7 @@
 
 Docker Compose:
 
-```
+```yaml
 services:
   feishin:
     container_name: feishin

@@ -4,7 +4,7 @@ Very helpful and simple tutorial from the author here: https://dockge.kuma.pet/
 
 But just in case, this is the compose file I have:
 
-```
+```yaml
 services:
   dockge:
     image: louislam/dockge:1

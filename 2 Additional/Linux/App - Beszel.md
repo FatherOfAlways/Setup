@@ -2,7 +2,7 @@
 
 Docker compose:
 
-```
+```yaml
 services:
   beszel:
     image: henrygd/beszel:latest

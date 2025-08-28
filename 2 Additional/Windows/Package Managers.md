@@ -58,7 +58,7 @@ choco outdated
 Update all packages (confirming all prompts):
 
 ```
-sudo choco upgrade
+sudo choco upgrade all --acceptlicense
 ```
 
 *Note: needs [`gsudo`](https://github.com/gerardog/gsudo) to work. If not installed, open elevated Terminal and run from there.*

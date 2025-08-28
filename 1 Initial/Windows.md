@@ -115,6 +115,10 @@
 
 	- Win+R > `ms-settings:personalization-lighting` > Use Dynamic Lighting on my devices > Off
 
+- Disable [**Sticky Keys**](https://zapier.com/blog/turn-off-sticky-keys-windows/):
+
+	- Win+R > `ms-settings:easeofaccess-keyboard` > Sticky Keys > Off
+
 - Disable some [**Window Snapping**](https://support.microsoft.com/en-us/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241) preferences: 
 
 	- Win+R > `ms-settings:multitasking` > Snap windows > When I snap a window, suggest what I can snap next to it
@@ -127,6 +131,12 @@
 	- Win+R > `ms-settings:personalization-start` > Show recommendations for tips, shortcuts, new apps, and more
 
 #### Other
+
+- Enable [long paths](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#registry-setting-to-enable-long-paths):
+
+	```
+	New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+	```
 
 - Rename Computer:
 

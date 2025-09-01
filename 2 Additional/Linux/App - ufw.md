@@ -103,25 +103,4 @@ sudo ufw allow from 172.16.0.50 to any port [PORT]/tcp
 
 
 
-## Common services - ADD TO PERSONAL CONFIG FILES
 
-
-Feishin
-
-sudo ufw allow from 172.16.0.50 to any port 9180/tcp
-
-
-beszel-agent (MAYBE NOT NECESSARY, CHECK)
-
-sudo ufw allow from 172.16.0.0/24 to any port 45876
-
-
-
-
-Minecraft:
-
-sudo ufw allow from [SERVER_IP] to any port 25565,25566,25567/tcp
-sudo ufw allow from [SERVER_IP] to any port 25565,25566,25567/udp
-
-sudo ufw allow from 172.16.0.0/24 to any port 25565,25566,25567/tcp
-sudo ufw allow from 172.16.0.0/24 to any port 25565,25566,25567/udp

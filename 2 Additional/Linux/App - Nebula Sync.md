@@ -14,7 +14,7 @@ services:
 `.env` file:
 
 
-```
+```yaml
 PRIMARY="http://ph1.example.com|PASSWORD"  # Be sure to add quotes if you have special characters
 REPLICAS="http://ph2.example.com|PASSWORD,http://ph3.example.com|PASSWORD" # Be sure to add quotes if you have special characters
 FULL_SYNC=false

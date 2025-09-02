@@ -39,6 +39,16 @@
 
 
 
+## Useful Commands
+
+Create a new network:
+
+```
+sudo docker network create NETWORK_NAME
+```
+
+
+
 ## Resources
 
 - [Documentation](https://docs.docker.com/engine/install/ubuntu/)

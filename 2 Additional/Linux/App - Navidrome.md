@@ -17,10 +17,15 @@ services:
       # ND_LOGLEVEL: debug
       ND_REVERSEPROXYWHITELIST: 172.24.0.3/32 # NPM IP in "proxy-intranet" network
       ND_ENABLETRANSCODINGCONFIG: false
-      ND_LASTFM_APIKEY: 972a476a009219800eb2d0764d3e5f7f # ${LASTFM_KEY}
-      ND_LASTFM_SECRET: baf23ba0099873fa09c326e686c117a2 # ${LASTFM_SECRET}
+      ND_SCANNER_SCHEDULE: "0 0 * * 0"
+      ND_BACKUP_PATH: "/backup"
+      ND_BACKUP_SCHEDULE: "0 1 * * 6"
+      ND_BACKUP_COUNT: 7
+      ND_LASTFM_APIKEY: # ${LASTFM_KEY}
+      ND_LASTFM_SECRET: # ${LASTFM_SECRET}
     volumes:
       - /opt/stacks/navidrome/data:/data
+      - /opt/stacks/navidrome/backup:/backup
       - /srv/music/primary:/music:ro
       - /srv/music/quarantine:/quarantine:ro
     networks:

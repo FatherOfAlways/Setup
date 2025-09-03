@@ -14,15 +14,19 @@ services:
       - WEBUI_PORT=8800
       - TORRENTING_PORT=7999
     volumes:
-      - ./config:/config  # REQUIRED
-      - ./themes:/themes  # OPTIONAL
-      - /mnt/titan/qbit:/qbit  # SEMI-REQUIRED: Downloads
+      - ./config:/config # REQUIRED
+      - ./themes:/themes # OPTIONAL
+      - /mnt/titan/qbit:/qbit # SEMI-REQUIRED: downloads
     ports:
-      - 8800:8800
-      - 7999:7999
-      - 7999:7999/udp
+      #- 8800:8800 # WebUI Port
+      - 7999:7999 # Listening Port
+      - 7999:7999/udp # Listening Port
     restart: unless-stopped
-networks: {}
+    networks:
+      - proxy-intranet
+networks:
+  proxy-intranet:
+    external: true
 ```
 
 ## Troubleshooting

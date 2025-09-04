@@ -17,6 +17,49 @@ sudo systemctl restart nginx
 
 
 
+## Stream Config (Minecraft)
+
+This config reroutes traffic via a "middle man" server, obfuscating your main server's IP.
+
+*Prerequisite:* `nginx` installed.
+
+1. Install the `nginx-extras` package:
+
+	```
+	sudo apt-get install nginx-extras
+	```
+
+2. Open main configuration file:
+
+	```
+	sudo nano /etc/nginx/nginx.conf
+	```
+
+3. Find the http block and add the stream block after it:
+
+	```
+	stream {
+		server {
+			listen 25565;
+			proxy_pass YOUR_MINECRAFT_SERVER_IP:25565;
+		}
+	}
+	```
+
+4. Verify the configuration:
+
+	```
+	sudo nginx -t
+	```
+
+5. Restart nginx
+
+	```
+	sudo systemctl restart nginx
+	```
+
+
+
 ## Reverse Proxy Template
 
 ```

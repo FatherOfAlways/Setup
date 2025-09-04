@@ -1,6 +1,6 @@
 ## Installation
 
-Docker Compose:
+[Docker Compose](https://github.com/lovelaze/nebula-sync):
 
 ```yaml
 services:

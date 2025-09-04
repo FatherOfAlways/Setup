@@ -1,8 +1,6 @@
 ## Installation
 
-Very helpful and simple tutorial from the author here: https://dockge.kuma.pet/
-
-But just in case, this is the compose file I have:
+[Docker Compose](https://dockge.kuma.pet/):
 
 ```yaml
 services:

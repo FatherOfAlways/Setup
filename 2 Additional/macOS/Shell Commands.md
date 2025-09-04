@@ -1,11 +1,3 @@
-## Sources
-
-- https://beebom.com/mac-terminal-commands-access-hidden-features/
-
-* * *
-
-
-
 ## App/System Restart
 
 All these services should automatically restart after they have been killed. If for some reason they won't, you're probably better off just rebooting (to be sure, the "Shut Down" option from the Finder/Menu bar will probably not help, just go to the Terminal and type: `sudo shutdown -r now`, provide your Admin password and your machine should restart.
@@ -124,3 +116,11 @@ afconvert input.mp3 ringtone.m4r -f m4af
 ```
 sudo rm -RF PATH_TO_FILE
 ```
+
+
+
+## Resources
+
+- https://beebom.com/mac-terminal-commands-access-hidden-features/
+
+* * *

@@ -1,6 +1,8 @@
 ## Installation
 
-Docker compose:
+*Prerequisite: Docker, Docker Compose, Docker network 'proxy-intranet' created*
+
+[Docker Compose](https://hub.docker.com/r/linuxserver/qbittorrent):
 
 ```yaml
 services:
@@ -90,7 +92,6 @@ sudo chown -R 1000:1000 /PATH/TO/FOLDER
 **Installation:**
 
 - [Let's Install qBittorrent using Docker Compose](https://www.youtube.com/watch?v=T1CaemsfkkU)
-- [Docker Hub: linuxserver/qbittorrent](https://hub.docker.com/r/linuxserver/qbittorrent)
 
 
 **Troubleshooting:**

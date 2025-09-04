@@ -2,7 +2,7 @@
 
 *Prerequisite: Docker, Docker Compose, Docker network 'proxy-intranet' created*
 
-Docker compose:
+[Docker Compose](https://www.navidrome.org/docs/installation/docker/):
 
 ```yaml
 services:

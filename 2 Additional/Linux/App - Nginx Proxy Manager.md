@@ -2,7 +2,7 @@
 
 *Prerequisite: Docker, Docker Compose, Docker network 'proxy-intranet' created*
 
-Docker compose:
+[Docker Compose](https://nginxproxymanager.com/setup/):
 
 ```yaml
 services:
@@ -41,35 +41,6 @@ services:
 networks:
   proxy-intranet:
     external: true
-```
-
-
-
-## Docker File Management
-
-*Prerequisite:* Navigate to `/opt/nginxproxymanager` (if not already there):
-
-```
-cd /opt/stacks/nginxproxymanager/
-```
-
-Run the app:
-
-```
-sudo docker compose up -d
-```
-
-Stop the app:
-
-```
-sudo docker compose down
-```
-
-Stop services individually:
-
-```
-sudo docker container stop nginxproxymanager-app-1
-sudo docker container stop nginxproxymanager-db-1
 ```
 
 

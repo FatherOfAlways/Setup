@@ -41,6 +41,19 @@
 
 ## Useful Commands
 
+Run a container:
+
+```
+cd /path/to/compose/file/
+sudo docker compose up -d
+```
+
+Stop a container:
+
+```
+sudo docker compose down
+```
+
 Create a new network:
 
 ```

@@ -1,6 +1,8 @@
 ## Installation
 
-Docker compose:
+*Prerequisite: Docker, Docker Compose, Docker network 'proxy-intranet' created*
+
+[Docker Compose](https://docs.craftycontrol.com/pages/getting-started/installation/docker/):
 
 ```yaml
 services:

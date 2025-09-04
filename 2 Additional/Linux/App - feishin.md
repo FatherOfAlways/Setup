@@ -2,7 +2,7 @@
 
 *Prerequisite: Docker, Docker Compose, Docker network 'proxy-intranet' created*
 
-Docker Compose:
+[Docker Compose](https://github.com/jeffvli/feishin):
 
 ```yaml
 services:

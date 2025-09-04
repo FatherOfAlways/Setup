@@ -1,5 +1,3 @@
-**Replace *ALL_CAPS* text with appropriate values below.**
-
 ## Useful Commands
 
 Volume usage data:

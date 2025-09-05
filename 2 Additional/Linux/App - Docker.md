@@ -41,6 +41,12 @@
 
 ## Useful Commands
 
+Show running containers:
+
+```
+sudo docker ps
+```
+
 Run a container:
 
 ```
@@ -51,6 +57,7 @@ sudo docker compose up -d
 Stop a container:
 
 ```
+cd /path/to/compose/file/
 sudo docker compose down
 ```
 

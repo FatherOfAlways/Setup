@@ -7,8 +7,8 @@ services:
   dockge:
     image: louislam/dockge:1
     restart: unless-stopped
-    ports:
-      - 5001:5001
+    #ports:
+    #  - 5001:5001
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./data:/app/data
@@ -20,6 +20,11 @@ services:
     environment:
       # Tell Dockge where to find the stacks
       - DOCKGE_STACKS_DIR=/opt/stacks
+    networks:
+      - proxy-intranet
+networks:
+  proxy-intranet:
+    external: true
 ```
 
 

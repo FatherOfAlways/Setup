@@ -13,7 +13,7 @@ services:
       - SERVER_NAME=Osgiliath # Predefined server name
       - SERVER_LOCK=true # When true AND name/type/url are set, only username/password can be toggled
       - SERVER_TYPE=navidrome # 'jellyfin' also works
-      - SERVER_URL=https://navidrome.fatherofalways.net/ # http://address:port
+      - SERVER_URL=http(s)://ADDRESS(:PORT)
       - PUID=1000
       - PGID=1000
       - UMASK=002

@@ -39,6 +39,36 @@
 
 
 
+## Useful Commands
+
+Show running containers:
+
+```
+sudo docker ps
+```
+
+Run a container:
+
+```
+cd /path/to/compose/file/
+sudo docker compose up -d
+```
+
+Stop a container:
+
+```
+cd /path/to/compose/file/
+sudo docker compose down
+```
+
+Create a new network:
+
+```
+sudo docker network create NETWORK_NAME
+```
+
+
+
 ## Resources
 
 - [Documentation](https://docs.docker.com/engine/install/ubuntu/)

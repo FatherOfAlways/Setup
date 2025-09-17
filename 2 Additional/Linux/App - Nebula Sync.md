@@ -1,8 +1,8 @@
 ## Installation
 
-Docker Compose:
+[Docker Compose](https://github.com/lovelaze/nebula-sync):
 
-```
+```yaml
 services:
   nebula-sync:
     image: ghcr.io/lovelaze/nebula-sync:latest
@@ -14,7 +14,7 @@ services:
 `.env` file:
 
 
-```
+```yaml
 PRIMARY="http://ph1.example.com|PASSWORD"  # Be sure to add quotes if you have special characters
 REPLICAS="http://ph2.example.com|PASSWORD,http://ph3.example.com|PASSWORD" # Be sure to add quotes if you have special characters
 FULL_SYNC=false

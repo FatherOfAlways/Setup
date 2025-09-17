@@ -1,8 +1,10 @@
 ## Installation
 
-Docker compose:
+*Prerequisite: Docker, Docker Compose, Docker network 'proxy-intranet' created*
 
-```
+[Docker Compose](https://beszel.dev/guide/hub-installation):
+
+```yaml
 services:
   beszel:
     image: henrygd/beszel:latest

@@ -1,76 +1,46 @@
 ## Installation
 
-*Prerequisite: Docker + Docker Compose*
+*Prerequisite: Docker, Docker Compose, Docker network 'proxy-intranet' created*
 
-Create a `docker-compose.yml` file (in `/opt/nginxproxymanager`); replace `DATABASE_USERNAME` and `DATABASE_PASSWORD`:
+[Docker Compose](https://nginxproxymanager.com/setup/):
 
-* File creation:
-
-	```
-	sudo nano /opt/nginxproxymanager/docker-compose.yml
-	```
-
-* Contents:
-
-	```
-	services:
-	  app:
-	    image: 'jc21/nginx-proxy-manager:latest'
-	    ports:
-	      - '80:80'
-	      - '81:81'
-	      - '443:443'
-	    environment:
-	      DB_MYSQL_HOST: "db"
-	      DB_MYSQL_PORT: 3306
-	      DB_MYSQL_USER: "DATABASE_USERNAME"
-	      DB_MYSQL_PASSWORD: "DATABASE_PASSWORD"
-	      DB_MYSQL_NAME: "DATABASE_USERNAME"
-	    volumes:
-	      - ./data:/data
-	      - ./letsencrypt:/etc/letsencrypt
-	    extra_hosts:
-	      - 'host.docker.internal:host-gateway'
-	    restart: unless-stopped
-	  db:
-	    image: 'jc21/mariadb-aria:latest'
-	    environment:
-	      MYSQL_ROOT_PASSWORD: 'DATABASE_PASSWORD'
-	      MYSQL_DATABASE: 'DATABASE_USERNAME'
-	      MYSQL_USER: 'DATABASE_USERNAME'
-	      MYSQL_PASSWORD: 'DATABASE_PASSWORD'
-	    volumes:
-	      - ./mysql:/var/lib/mysql
-	    restart: unless-stopped
-	```
-
-
-
-## Docker File Management
-
-*Prerequisite:* Navigate to `/opt/nginxproxymanager` (if not already there)
-
-```
-cd /opt/nginxproxymanager/
-```
-
-Runn the app:
-
-```
-sudo docker compose up -d
-```
-
-Stop the app:
-
-```
-sudo docker compose down
-```
-
-Stop services individually:
-
-```
-sudo docker container stop nginxproxymanager-app-1
-sudo docker container stop nginxproxymanager-db-1
+```yaml
+services:
+  app:
+    image: jc21/nginx-proxy-manager:latest
+    ports:
+      - 80:80
+      - 81:81
+      - 443:443
+    environment:
+      DB_MYSQL_HOST: db
+      DB_MYSQL_PORT: 3306
+      DB_MYSQL_USER: foa
+      DB_MYSQL_PASSWORD: ${PASSWORD}
+      DB_MYSQL_NAME: foa
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
+    networks:
+      - proxy-intranet
+  db:
+    image: jc21/mariadb-aria:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PASSWORD}
+      MYSQL_DATABASE: foa
+      MYSQL_USER: foa
+      MYSQL_PASSWORD: ${PASSWORD}
+    volumes:
+      - ./mysql:/var/lib/mysql
+    restart: unless-stopped
+    networks:
+      - proxy-intranet
+networks:
+  proxy-intranet:
+    external: true
 ```
 
 

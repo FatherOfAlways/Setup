@@ -74,7 +74,7 @@
 12. Download my `Oh My Posh` theme:
 
 	```bash
-	cd ~ && mkdir ~/.poshthemes && cd .poshthemes/ && wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/refs/heads/main/3%20Config/Shell/poshthemes/TheCollabShort-2.2.omp.json'
+	cd ~ && mkdir ~/.poshthemes && cd .poshthemes/ && wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/refs/heads/main/poshthemes/TheCollabShort-2.2.omp.json'
 	```
 
 	_(Check if the `wget` link above is still correct.)_

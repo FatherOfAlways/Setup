@@ -1,0 +1,141 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "type": "prompt",
+      "newline": true,
+      "segments": [
+        {
+          "type": "os",
+          "background": "#0C212F",
+          "foreground": "#FFFFFF",
+          "style": "diamond",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} "
+        },
+        {
+          "type": "session",
+          "background": "#CB3B00",
+          "foreground": "#FFFFFF",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ if .SSHSession }}\uF817{{ end }} "
+        },
+        {
+          "type": "session",
+          "background": "#26BDBB",
+          "foreground": "#0C212F",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": " \uf007 {{ .UserName }} "
+        },
+        {
+          "type": "path",
+          "background": "#26BDBB",
+          "foreground": "#0C212F",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "<background,transparent>\ue0b0</>",
+          "template": " {{ .Path }} ",
+          "properties": {
+            "home_icon": "\uf015",
+            "folder_icon": "\uf141",
+            "folder_separator_icon": "<transparent> \ue0b1 ",
+            "style": "agnoster_short",
+            "max_depth": 1
+          }
+        },
+        {
+          "type": "git",
+          "background": "#5f1e6d",
+          "foreground": "#FFFFFF",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0",
+          "trailing_diamond": "\ue0b0",
+          "template": " \uE0A0 {{ .Ref }} ",
+          "properties": {
+            "fetch_status": true
+          }
+        },
+        {
+          "type": "root",
+          "background": "#CB3B00",
+          "foreground": "#FFFFFF",
+          "style": "diamond",
+          "leading_diamond": "<transparent,background>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
+          "template": " \uf0aa "
+        }
+      ]
+    },
+    {
+      "alignment": "right",
+      "type": "prompt",
+      "segments":  [
+        {
+          "type": "status",
+          "background_templates": [
+            "{{ if eq .Code 0 }}#009173{{ else if eq .Code 130 }}#CB3B00{{ else }}#91001E{{ end }}"
+          ],
+          "foreground": "#ffffff",
+          "style": "diamond",
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "<transparent,background>\ue0b2</>",
+          "template": " {{ if eq .Code 0 }}\uf00c{{ else if eq .Code 130 }}\uf071 {{ .Code }}{{ else }}\uf00d {{ .Code }}{{ end }} ",
+          "properties": {
+            "always_enabled": true
+          }
+        },
+        {
+          "type": "executiontime",
+          "background": "#1C7C82",
+          "foreground": "#0C212F",
+          "style": "diamond",
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "<transparent,background>\ue0b2</>",
+          "template": " \uf254 {{ .FormattedMs }} ",
+          "properties": {
+            "style": "round",
+            "threshold": 0
+          }
+        },
+        {
+          "type": "time",
+          "background": "#26BDBB",
+          "foreground": "#0C212F",
+          "style": "diamond",
+          "leading_diamond": "\ue0b2",
+          "trailing_diamond": "\ue0b4",
+          "template": " \uf017 {{ .CurrentDate | date .Format }} ",
+          "properties": {
+            "time_format": "15:04"
+          }
+        }
+      ]
+    },
+    {
+      "alignment": "left",
+      "type": "prompt",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "foreground": "#16706f",
+          "style": "plain",
+          "template": " \u276f"
+        }
+      ]
+     }
+  ],
+  "console_title_template": "{{if .Root}} \u26a1 {{end}}{{ .UserName }} @ {{.HostName}}",
+  "iterm_features": [
+    "current_dir",
+    "remote_host"
+  ],
+  "final_space": true,
+  "version": 2
+}

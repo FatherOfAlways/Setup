@@ -66,19 +66,3 @@ setopt EXTENDED_HISTORY
 # FZF config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height 25% --layout=reverse'
-
-# Aliases
-alias ls='lsd'
-
-alias cd-lk='cd /Users/fatherofalways/Git/GitHub/LedinskeKlasike.si'
-alias cd-sh='cd /Users/fatherofalways/Git/GitHub/Shroomlight.net'
-alias cd-to='cd /Users/fatherofalways/Git/GitHub/Tomaz.co'
-alias cd-bu='cd /Users/fatherofalways/Git/GitHub/Burg.si'
-alias cd-se='cd /Users/fatherofalways/Git/GitHub/Setup'
-
-alias cd-hl='cd /Users/fatherofalways/Git/Gitea/Homelab'
-alias cd-hlf='cd /Users/fatherofalways/Git/Gitea/Homelab-Files'
-
-flexgetd() {
-  docker exec -it flexget flexget "$@"
-}

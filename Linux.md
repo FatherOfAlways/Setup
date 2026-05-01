@@ -59,19 +59,26 @@
 		sudo apt-get install build-essential procps curl file git
 		```
 
-10. Install [`Oh My Posh`](https://ohmyposh.dev/):
+	3. Add [Homebrew path](https://docs.brew.sh/Homebrew-on-Linux#install) to your `.zshrc` file:
+
+		```bash
+		echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
+		```
+
+
+1.  Install [`Oh My Posh`](https://ohmyposh.dev/):
 
 	```bash
 	brew install jandedobbeleer/oh-my-posh/oh-my-posh
 	```
 
-11. Install Nerd font - `Meslo`:
+2.  Install Nerd font - `Meslo`:
 
 	```bash
 	oh-my-posh font install
 	```
 
-12. Download my `Oh My Posh` theme:
+3.  Download my `Oh My Posh` theme:
 
 	```bash
 	cd ~ && mkdir ~/.poshthemes && cd .poshthemes/ && wget 'https://raw.githubusercontent.com/FatherOfAlways/Setup/refs/heads/main/poshthemes/TheCollabShort-2.2.omp.json'
@@ -79,13 +86,13 @@
 
 	_(Check if the `wget` link above is still correct.)_
 
-13. Install [`Oh My Zsh`](https://ohmyz.sh/):
+4.  Install [`Oh My Zsh`](https://ohmyz.sh/):
 
 	```bash
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	```
 
-14.  Install the following `Oh My Zsh` plugins:
+5.   Install the following `Oh My Zsh` plugins:
 
 	 * [`zsh-autosuggestions`](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
 
@@ -111,19 +118,21 @@
 		git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
 		```
 
-15. Edit `.zshrc`
+6.  Edit `.zshrc`
 
 	```bash
 	sudo nano ~/.zshrc
 	```
 
-16. Reload your profile for the changes to take effect:
+7. Replace the contents with the config found [on the `.zshrc` page](zshrc.md).
+
+8.  Reload your profile for the changes to take effect:
 
 	```bash
 	exec zsh
 	```
 
-17. Enable `nano` [syntax highlighting](https://gist.github.com/BlakeGardner/5587269):
+9.  Enable `nano` [syntax highlighting](https://gist.github.com/BlakeGardner/5587269):
 
 	 1. Install `nano` and [`nanorc`](https://github.com/scopatz/nanorc) via package manager:
 

@@ -242,10 +242,10 @@ Get-ExecutionPolicy -List
 
 - Configure [**Language Bar Stuff**](https://beebom.com/how-remove-language-switcher-windows-11-taskbar/), disable [**Keyboard Layout Hotkey**](https://superuser.com/a/1428326):
 
-	1. Win+R > `ms-settings:keyboard` - _Make sure your primary language is the only one available, remove others_
-	2. Win+R > `ms-settings:typing` > Advanced keyboard settings > Use the desktop language bar when it is available - _Must be checked_
-	3. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Language bar > Hidden - _Must be selected_
-	4. Win+R > `ms-settings:typing` > Advanced keyboard settings > Language bar options > Advanced Key Settings - _Disable the hotkeys_
+	1. [Keyboard](ms-settings:keyboard) - `ms-settings:keyboard` - _Make sure your primary language is the only one available, remove others_
+	2. [Typing](ms-settings:typing) - `ms-settings:typing` > Advanced keyboard settings > Use the desktop language bar when it is available - _Must be checked_
+	3. [Typing](ms-settings:typing) - `ms-settings:typing` > Advanced keyboard settings > Language bar options > Language bar > Hidden - _Must be selected_
+	4. [Typing](ms-settings:typing) - `ms-settings:typing` > Advanced keyboard settings > Language bar options > Advanced Key Settings - _Disable the hotkeys_
 
 - Disable [**Clipboard History**](https://www.elevenforum.com/t/enable-or-disable-clipboard-history-in-windows-11.973/) either by running [this reg file](https://www.elevenforum.com/) or doing it manually:
 
@@ -257,22 +257,35 @@ Get-ExecutionPolicy -List
 
 - Disable Windows [**Dynamic Lighting**](https://support.microsoft.com/en-us/windows/control-dynamic-lighting-devices-in-windows-8e8f22e3-e820-476c-8f9d-9ffc7b6ffcd2):
 
-	- Win+R > `ms-settings:personalization-lighting` > Use Dynamic Lighting on my devices > Off
+	- [Dynamic Lighting](ms-settings:personalization-lighting) - `ms-settings:personalization-lighting` > Use Dynamic Lighting on my devices > Off
 
 - Disable [**Sticky Keys**](https://zapier.com/blog/turn-off-sticky-keys-windows/):
 
-	- Win+R > `ms-settings:easeofaccess-keyboard` > Sticky Keys > Off
+	- [Accessibility / Keyboard](ms-settings:easeofaccess-keyboard) - `ms-settings:easeofaccess-keyboard` > Sticky Keys > Off
 
 - Disable some [**Window Snapping**](https://support.microsoft.com/en-us/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241) preferences: 
 
-	- Win+R > `ms-settings:multitasking` > Snap windows > When I snap a window, suggest what I can snap next to it
-	- Win+R > `ms-settings:multitasking` > Snap windows > Show snap layouts when I hover over a window's maximise button
-	- Win+R > `ms-settings:multitasking` > Snap windows > Show snap layouts when I drag a window to the top of my screen
+	- [System / Multi-tasking](ms-settings:multitasking) - `ms-settings:multitasking` > Snap windows > When I snap a window, suggest what I can snap next to it
+	- [System / Multi-tasking](ms-settings:multitasking) - `ms-settings:multitasking` > Snap windows > Show snap layouts when I hover over a window's maximise button
+	- [System / Multi-tasking](ms-settings:multitasking) - `ms-settings:multitasking` > Snap windows > Show snap layouts when I drag a window to the top of my screen
 
 - Disable **Start Menu/Windows Explorer** recommendations: 
 
-	- Win+R > `ms-settings:personalization-start` > Show recommended files in Start, recent files in File Explorer, and items in Jump Lists
-	- Win+R > `ms-settings:personalization-start` > Show recommendations for tips, shortcuts, new apps, and more
+	- [Personalization / Start](ms-settings:personalization-start) - `ms-settings:personalization-start` > Show recommended files in Start, recent files in File Explorer, and items in Jump Lists
+	- [Personalization / Start](ms-settings:personalization-start) - `ms-settings:personalization-start` > Show recommendations for tips, shortcuts, new apps, and more
+  
+- Enable **End Task** right-click menu item in taskbar: 
+
+    - [System / Advanced](ms-settings:developers) - `ms-settings:developers` > Taskbar > End Task > On
+
+- Enable **Startup App Notification** (for informational purposes):
+
+	- [System / Notifications](ms-settings:notifications) - `ms-settings:notifications` > Notifications from apps and other senders > Startup App Notification > On
+
+- Enable **Quick Machine Recovery** (for fixing possible boot loop crashes caused by updates):
+
+	- [System / Recovery](ms-settings:recovery) - `ms-settings:recovery` > Quick machine recovery > Quick machine recovery > On
+	- [System / Recovery](ms-settings:recovery) - `ms-settings:recovery` > Quick machine recovery > Automatically check for solutions > On
 
 #### Other
 

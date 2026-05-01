@@ -130,7 +130,7 @@
 	brew install fzf
 	```
 
-10. Install and enable nano syntax highlighting:
+10. Install and enable `nano` syntax highlighting:
 
 	```
 	brew install nano nanorc
@@ -147,7 +147,7 @@
         * `.poshthemes`
         * `.fzf.zsh`
         * `.zsh_history`
-        * `.zshrc`
+        * [`.zshrc`](zshrc.md)
 
 	- To `~/.config`:
 
